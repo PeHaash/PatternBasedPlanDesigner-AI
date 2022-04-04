@@ -27,6 +27,7 @@ def PGSubspaceMaxMin(Plan):
 
 
 def PGSubspaceConnectivity(Plan):
+    """Pattern General: All Sucspcases Should be Connected with eachother"""
     ssbyroom = [[] for i in range(Plan.HyperParameters.RoomNumber)]
     for i, ss in enumerate(Plan.Subspace):
         ssbyroom[ss.Room].append(i)
@@ -37,9 +38,23 @@ def PGSubspaceConnectivity(Plan):
     return 1 - (error / Plan.SubspaceSize)
 
 
+def PGAllConnected(Plan):
+    """Pattern General: All Rooms Has to be connected"""
+    error = Plan.RoomConnections.DisjointnessOfElements([i for i in range(Plan.HyperParameters.RoomNumber)])
+    return 1 - (error / Plan.HyperParameters.RoomNumber)
+
+    # dset=DISJOINSET(RoomNumber)
+    # for i in range(RoomNumber):
+    #     for j in range(i):
+    #         if len(OpeningsBetweenRooms[i][j])>0:
+    #             dset.Join(i,j)
+    # Scores.append((PatternCode,1.0 if dset.NumOfSets()==1 else 0.0))
+    # return 0
+
+
 def Evaluate(Plan, PatternCode):
     # TEMP: we send Plan as EvaluationMaterial, just to can set Plan.Score Here in Evaluate (this may have some benefits)
-    Patterns = {"PGssMm": PGSubspaceMaxMin, "PGssC": PGSubspaceConnectivity}
+    Patterns = {"PGssMm": PGSubspaceMaxMin, "PGssC": PGSubspaceConnectivity, "PGAC": PGAllConnected}
     if PatternCode in Patterns:
         TestScore = Patterns[PatternCode](Plan)
         Plan.Score += TestScore

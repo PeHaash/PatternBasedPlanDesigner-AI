@@ -40,13 +40,23 @@ def SetColorFromKeys(ColorType, keys, default=(0, 0, 0)):
     return Color
 
 
-def Draw(line, ShapeOutput, ShapeColorOutput, TextOutput, TextPositionOutput, TextColorOutput):
+def Draw(line, ShapeOutput, ShapeColorOutput, TextOutput, TextPositionOutput, TextColorOutput, FrameNow, FrameToShow):
     # Set command & keys
+    P0X0, P0Y0 = 0, 0
     command, attrs = line.split(":")
     command = command.upper()
     attrs = attrs.split()
     attrs = (attribute.split("=") for attribute in attrs)
     keys = {a[0].upper(): Removedquotes(a[1]) for a in attrs}
+
+    # Check Frame-Related Things:
+    if command == "FRAME":
+        return int(keys["CODE"])
+    if FrameToShow != -1 and FrameNow != FrameToShow:
+        # We are not in the frame we should
+        return FrameNow
+    if FrameToShow == -1:
+        P0X0, P0Y0 = (FrameNow % 10) * (2000), -(FrameNow // 10) * (2000)
 
     # Main Variables:
     HasStroke = False if "NOSTROKE" in keys and keys["NOSTROKE"].upper() == "YES" else True
@@ -65,12 +75,20 @@ def Draw(line, ShapeOutput, ShapeColorOutput, TextOutput, TextPositionOutput, Te
 
     if command == "RECTANGLE":
         x0, y0, x1, y1 = (float(k) for k in (keys["X0"], keys["Y0"], keys["X1"], keys["Y1"]))
+        x0 += P0X0
+        x1 += P0X0
+        y0 += P0Y0
+        y1 += P0Y0
         GeoStrokeShape = gh.JoinCurves(gh.Rectangle2Pt(PLANE, gh.ConstructPoint(x0, y0, 0), gh.ConstructPoint(x1, y1, 0), 0)[0], False)
         GeoFillShape = gh.BoundarySurfaces(GeoStrokeShape) if HasFill else None
         GeoTextPosition = gh.Area(GeoStrokeShape)[1] if HasText else None
     if command == "LINE":
         HasFill = False
         x0, y0, x1, y1 = (float(k) for k in (keys["X0"], keys["Y0"], keys["X1"], keys["Y1"]))
+        x0 += P0X0
+        x1 += P0X0
+        y0 += P0Y0
+        y1 += P0Y0
         GeoStrokeShape = gh.Line(gh.ConstructPoint(x0, y0, 0), gh.ConstructPoint(x1, y1, 0))
         GeoTextPosition = gh.CurveMiddle(GeoStrokeShape)
 
@@ -100,6 +118,13 @@ def Draw(line, ShapeOutput, ShapeColorOutput, TextOutput, TextPositionOutput, Te
         TextOutput.append(GeoTextData)
         TextPositionOutput.append(GeoTextPosition)
         TextColorOutput.append(GeoTextColor)
+    return FrameNow
+
+
+if False:  # Just to fool Sublime-Anaconda
+    Activate = None
+    TBGE = None
+    FrameToShow = None
 
 
 if Activate:
@@ -108,12 +133,15 @@ if Activate:
     TextOutput = []
     TextPositionOutput = []
     TextColorOutput = []
-
+    FrameNow = -5
     for line in TBGE:
-        Draw(line=line,
-             ShapeOutput=ShapeOutput,
-             ShapeColorOutput=ShapeColorOutput,
-             TextOutput=TextOutput,
-             TextPositionOutput=TextPositionOutput,
-             TextColorOutput=TextColorOutput
-             )
+        FrameNow = Draw(
+            line=line,
+            ShapeOutput=ShapeOutput,
+            ShapeColorOutput=ShapeColorOutput,
+            TextOutput=TextOutput,
+            TextPositionOutput=TextPositionOutput,
+            TextColorOutput=TextColorOutput,
+            FrameNow=FrameNow,
+            FrameToShow=FrameToShow
+        )

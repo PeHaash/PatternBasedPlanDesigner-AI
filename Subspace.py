@@ -8,8 +8,8 @@ class SUBSPACE:
         self.Yweight = numericDiscrip[3]
         self.Room = int(numericDiscrip[4] * HyperParameters.RoomNumber)
         self.SubspcaceCode = numericDiscrip[5]
-        self.HasOpening = 1 if numericDiscrip[6] > 0.5 else 0
-        self.IsFenestrated = 1 if numericDiscrip[7] > 0.5 else 0
+        self.HasOpening = True if numericDiscrip[6] > 0.5 else False
+        self.IsFenestrated = True if numericDiscrip[7] > 0.5 else False
         self.Position = []
         self.IsEntranceDoor = False
 

@@ -17,3 +17,10 @@ It feels like I've always been blind\
 I don't know why you girls are so kind\
 For there are so many in line\
 Whose lives aren't as lost as mine"
+
+"""
+NumericalExpressionOfPlan
+NumericData --> some numbers, only
+Plan --> a class of Subspaces
+Subspace
+"""

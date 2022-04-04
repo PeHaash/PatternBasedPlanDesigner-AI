@@ -27,14 +27,15 @@ class POPULATION:
     def Crossover(self):
         for i in range(self.SizeOfSet - self.SizeAfterKillExcess):
             A, B = random.sample(self.Species[:self.SizeAfterKillExcess], 2)
-            self.Species.append(SPECIES([(a * A.Score + b * B.Score) / (A.Score + B.Score) for (a, b) in zip(A.Data, B.Data)]))
+            # self.Species.append(SPECIES([(a * A.Score + b * B.Score) / (A.Score + B.Score) for (a, b) in zip(A.Data, B.Data)]))
+            self.Species.append(SPECIES([a if random.uniform(0, A.Score + B.Score) > B.Score else b for (a, b) in zip(A.Data, B.Data)]))
 
     def Mutate(self):
-        for i in range(self.SizeAfterKillExcess, self.SizeOfSet):
+        for i in range(1, self.SizeOfSet):  # self.KilllExcess...
             for j in range(self.DataSize):
                 if random.random() < self.MutationRate:
                     self.Species[i].Data[j] =\
-                        max(0, min(1, self.Species[i].Data[j] + random.uniform(-self.MutationMove / 2, self.MutationMove / 2)))
+                        max(0.01, min(0.99, self.Species[i].Data[j] + random.uniform(-self.MutationMove / 2, self.MutationMove / 2)))
 
     def RunGeneration(self):
         # Score Them and sort

@@ -22,7 +22,7 @@ def Center(pos):
 
 
 class PLAN:
-    def __init__(self, HyperParameters, Features, NumericData):
+    def __init__(self, HyperParameters, Features, NumericData, TBGEElement, TBGEFrame):
         SubspaceTemp = [Subspace.SUBSPACE(HyperParameters, numericDiscrip) for numericDiscrip in NumericData]
         self.SubspaceSize = len(SubspaceTemp)
         # Add Subspace Codes:
@@ -40,11 +40,14 @@ class PLAN:
         self.Score = 0
         self.Features = Features
         self.HyperParameters = HyperParameters
-        self.GraphicExport = TextBasedGraphicExport.TBGE(FileName="Export", DateCode=self.HyperParameters.DateCode)
         self.SubspaceConnections = DisjointSet.DISJOINSET(self.SubspaceSize)  # To Find Connections and Openings whitin a room
         self.RoomConnections = DisjointSet.DISJOINSET(HyperParameters.RoomNumber)  # To Find Connections and Openings Between Spaces
         self.Dead = False
         self.ActiveRoomCodes = [i for i in range(HyperParameters.RoomNumber) if Features.ActiveRooms[i] == 1]
+        self.GraphicExport = None
+        if TBGEElement is not None:
+            self.GraphicExport = TBGEElement
+            self.GraphicExport.SetFrame(TBGEFrame)
 
     def RecursiveSubspacePosition(Subspace, CutOrientation, Size, minX, minY, maxX, maxY):
         if Size == 1:
@@ -112,12 +115,12 @@ class PLAN:
         if self.Subspace[Index1].Room == self.Subspace[Index2].Room:
             # They are in same room
             self.SubspaceConnections.Join(Index1, Index2)
-            # print("link",Index1,Index2)
         elif self.Subspace[Index1].HasOpening is True and self.Subspace[Index2].HasOpening is True:
             # We have a door here
             self.RoomConnections.Join(self.Subspace[Index1].Room, self.Subspace[Index2].Room)
-            # print("Door Between:",self.Subspace[Index1].Room,"  ",self.Subspace[Index2].Room)
-            self.GraphicExport.AddLine(Point1, Point2, Thickness=10, Text="Door", StrokeColorCode=0)
+            # print("Door Between:", self.Subspace[Index1].Room, "  ", self.Subspace[Index2].Room)
+            if self.GraphicExport is not None:
+                self.GraphicExport.AddLine(Point1, Point2, Thickness=20, Text="Door", StrokeColorCode=8, TextColorCode=8)
             pass
         else:
             # Just Simple Wall
@@ -147,12 +150,6 @@ class PLAN:
                         # y=swY
                         aa, x1, x2, bb = sorted([AminX, AmaxX, BminX, BmaxX])
                         self.MakeConnection(r1, r2, (x1, swY), (x2, swY))
-                        self.GraphicExport.AddLine(
-                            Center(self.Subspace[r1].Position),
-                            Center(self.Subspace[r2].Position),
-                            StrokeColorCode=64,
-                            Thickness=5
-                        )
 
         for swX in sweepX:
             for r1 in minXs[swX]:
@@ -162,24 +159,19 @@ class PLAN:
                     if AminY < BmaxY and BminY < AmaxY:
                         # x=swX
                         aa, y1, y2, bb = sorted([AminY, AmaxY, BminY, BmaxY])
-                        self.MakeConnection(r1, r2, (swX, y1), (swX, y2))
-                        self.GraphicExport.AddLine(
-                            Center(self.Subspace[r1].Position),
-                            Center(self.Subspace[r2].Position),
-                            StrokeColorCode=64,
-                            Thickness=5
-                        )
 
-    def ExportTBGE(self, Point0=(0, 0), Append=False):
-        for o in self.Subspace:
-            self.GraphicExport.AddRectangle(
-                position=o.Position,
-                Thickness=0,
-                FillColorCode=o.Room * 17 + 30,
-                StrokeColorCode=1,
-                text="-".join([str(o.Room), str(o.SubspcaceCode)])
-            )
-        self.GraphicExport.End(Point0)
+    def ExportTBGE(self):
+        # print("kkkk")
+        if self.GraphicExport is not None:
+            for o in self.Subspace:
+                self.GraphicExport.AddRectangle(
+                    position=o.Position,
+                    Thickness=0,
+                    FillColorCode=o.Room * 17 + 30,
+                    StrokeColorCode=1,
+                    text="-".join([str(o.Room), str(o.SubspcaceCode)])
+                )
+        # self.GraphicExport.End(Point0)
 
     def SetFenestrations(self):
         pass
@@ -191,35 +183,43 @@ class PLAN:
         pass
 
 
-def GeneratePlanFromNumericData(HyperParameters, Features, NumericData):
+def GeneratePlanFromNumericData(HyperParameters, Features, NumericData, TBGEElement=None, TBGEFrame=None):
     ReloadAllImports()
-    Plan = PLAN(HyperParameters=HyperParameters, Features=Features, NumericData=NumericData)
+    Plan = PLAN(
+        HyperParameters=HyperParameters,
+        Features=Features,
+        NumericData=NumericData,
+        TBGEElement=TBGEElement,
+        TBGEFrame=TBGEFrame
+    )
+    # ==== CHECK #1:
     PatternCheck.Evaluate(Plan, "PGssMm")
-    ##
-    # TestScore=PatternCheck.Evaluate("PGssMm",Plan)
-    # if TestScore<1:
-    #   # print("Plan is dead")
-    #   Plan.Score+=TestScore
-    #   return Plan
-    # else:
-    #   Plan.Score+=1
-    ##
     if Plan.Score < 1:
         return Plan
+    # === Continue to complete Plan
     Plan.SetSubspacePositions()
     Plan.MergeSubspacesAndFindDoors()
+    # === Check #2
     PatternCheck.Evaluate(Plan, "PGssC")
-    ##
+    if Plan.Score < 2:
+        Plan.ExportTBGE()
+        return Plan
+    # === Check #3
+    PatternCheck.Evaluate(Plan, "PGAC")
+    if Plan.Score < 3:
+        Plan.ExportTBGE()
+        return Plan
+
     # TestScore=PatternCheck.Evaluate("PGssC",Plan)
     # Plan.Score+=TestScore
     ##
     Plan.SetFenestrations()
     Plan.SetEntranceDoor()
-    # Plan.ExportTBGE()
+    Plan.ExportTBGE()
     return Plan
 
 
 def ScoreFunction(HyperParameters, Features, NumericData):
     # WE HAVE TO MAKE NUMERICDATA 2D!!!!!!
-    NumericData2D = 0
-    return GeneratePlanFromNumericData(HyperParameters, Features, NumericData).Score
+    NumericData2D = [[NumericData[i * 8 + j] for j in range(8)] for i in range(16)]
+    return GeneratePlanFromNumericData(HyperParameters, Features, NumericData2D, TBGEElement=None, TBGEFrame=None).Score

@@ -36,14 +36,6 @@ class FEATURES:
         self.ActiveRooms = ActiveRooms
 
 
-"""
-NumericalExpressionOfPlan
-NumericData --> some numbers, only
-Plan --> a class of Subspaces
-Subspace
-"""
-
-
 def mainOld():
     RunOnlyOne = True
     ##
@@ -89,14 +81,14 @@ def mainOld():
     ##
 
 
-def main():
+def mainOld2():
     # Speed Check
     st = SpeedTracker.SPEEDTRACKER()
     # Initials
     HyperParameters = HYPERPARAMETERS(
-        RoomNumber=4,
-        MinSubspace=2,
-        MaxSubspace=10,
+        RoomNumber=6,
+        MinSubspace=1,
+        MaxSubspace=20,
         DateCode="0 MainBranch"
     )
     Features = FEATURES(
@@ -106,12 +98,16 @@ def main():
         EntrancePosition=0.80,
         ActiveRooms=[1, 1, 1, 1, 1, 1]
     )
+    ExportPlace = TextBasedGraphicExport.TBGE("NewTBGE", "0 MainBranch")
     Plans = [PlanMaker.GeneratePlanFromNumericData(
         HyperParameters=HyperParameters,
         Features=Features,
-        NumericData=NumericDataMaker.RandomNumericData(NumberOfSubspaces=16)
-    ) for i in range(100)
+        NumericData=NumericDataMaker.RandomNumericData(NumberOfSubspaces=32),
+        TBGEElement=ExportPlace,
+        TBGEFrame=i
+    ) for i in range(10)
     ]
+    ExportPlace.End()
     Plans.sort(key=lambda x: -x.Score)
     for pl in Plans:
         print(pl.Score)
@@ -119,15 +115,12 @@ def main():
     st.Lap()
 
 
-if __name__ == '__main__':
-    ReloadAllImports()
-    main()
-
-
-def mainGA():
+def main():
+    # Speed Check
+    st = SpeedTracker.SPEEDTRACKER()
     # Initials
     HyperParameters = HYPERPARAMETERS(
-        RoomNumber=4,
+        RoomNumber=6,
         MinSubspace=2,
         MaxSubspace=10,
         DateCode="0 MainBranch"
@@ -141,34 +134,42 @@ def mainGA():
     )
 
     Gene = GeneticAlgorithm.POPULATION(
-        SizeOfSet=100,
-        DataShape=16 * 8,
+        SizeOfSet=300,
+        DataSize=16 * 8,
         ScoreFunction=PlanMaker.ScoreFunction,
         Features=Features,
         HyperParameters=HyperParameters,
-        SurvivalRate=0.5,
-        MutationRate=0.1,
-        MutationMove=0.1
+        SurvivalRate=0.9,
+        MutationRate=0.9,
+        MutationMove=0.15
     )
-
-    RowSize = 10  # cm
-    Gap = 30  # cm
-    for i in range(100):
+    ExportPlace = TextBasedGraphicExport.TBGE("NewTBGE", "0 MainBranch")
+    # RowSize = 10  # cm
+    # Gap = 30  # cm
+    # PlanMaker.ScoreFunction(HyperParameters, Features, [1 for i in range(16 * 8)])
+    # return
+    GoalScore = 3
+    for i in range(150):
         Gene.RunGeneration()
-        print(Gene.BestScore())
-        BestPlanNow = PlanMaker.GeneratePlanFromNumericData(
+        print("Generation #{} Best Score:{}".format(i + 1, Gene.BestScore()))
+        # print(Gene.BestData())
+        bData = Gene.BestData()
+        bData2d = [[bData[i * 8 + j]for j in range(8)] for i in range(16)]
+        PlanMaker.GeneratePlanFromNumericData(
             Features=Features,
             HyperParameters=HyperParameters,
-            NumericData=Gene.BestSpecies)
-        BestPlanNow.ExportTBGE(Point0=((i % RowSize) * (Features.Width + Gap), (i // RowSize) * (Features.Depth + Gap)), Append=True)
+            NumericData=bData2d,
+            TBGEElement=ExportPlace,
+            TBGEFrame=i)
+        # BestPlanNow.ExportTBGE()
+        if Gene.BestScore() >= GoalScore:
+            print("yooohoooooo!!!!")
+            break
+    ExportPlace.End()
+    print("END!")
+    st.Lap()
 
-    Plans = [PlanMaker.GeneratePlanFromNumericData(
-        HyperParameters=HyperParameters,
-        Features=Features,
-        NumericData=NumericDataMaker.RandomNumericData(NumberOfSubspaces=16)
-    ) for i in range(100)
-    ]
-    Plans.sort(key=lambda x: -x.Score)
-    for pl in Plans:
-        print(pl.Score)
-    # st.Lap()
+
+if __name__ == '__main__':
+    ReloadAllImports()
+    main()
