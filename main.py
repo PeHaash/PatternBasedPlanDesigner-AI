@@ -2,53 +2,88 @@
 from importlib import reload
 import time
 
-import ClassDefinitions
-import RandomNumberMaker
-import PlanGenerator
+import NumericDataMaker
+import PlanMaker
 import PatternCheck
-import TBGE
+import TextBasedGraphicExport
+
+
+
+class HYPERPARAMETERS:
+	def __init__(self,RoomNumber,MinSubspace,MaxSubspace):
+		self.RoomNumber=RoomNumber
+		self.MinSubspace=MinSubspace
+		self.MaxSubspace=MaxSubspace
+
+class FEATURES:
+	def __init__(self,Width,Depth,ActiveRooms,TrueNorth,EntrancePosition):
+		self.Width=Width ## cm, in X
+		self.Depth=Depth ## cm, in Y
+		self.TrueNorth=TrueNorth ## degree
+		self.EntrancePosition=EntrancePosition
+		self.ActiveRooms=ActiveRooms
 
 """
-0: Living Room
-1: Kitchen
-2: Bedroom
-3: WC
-4: Bathroom
-5: Entrance Room
-6: --- (pazirayi) """
-
-class GLOBALDATA:
-	def __init__(self):
-		## hyper parameters
-		self.RoomNumber=6
-		self.MinSubspace=3
-		self.MaxSubspace=10
-		## input
-		self.X=1200 ## cm
-		self.Y=1500 ## cm
-		self.TrueNorth=65 ## degree
-		self.EntrancePosition=0.53
-		self.ActiveRooms=[1,1,1,1,1,1] ## 0...5 
+NumericalExpressionOfPlan
+NumericData --> some numbers, only
+Plan --> a class of Subspaces
+Subspace
+"""
 
 
 
 def main():
+	RunOnlyOne=True
+	##
 	t0=time.time()
-	reload(RandomNumberMaker)
-	reload(PlanGenerator)
-	reload(PatternCheck)
-	reload(TBGE)
+	##
+	TextBasedGraphicExport.SetDateCode("22-03-06")
 
-	TBGE.SetDateCode("22-03-03")
-	GlobalData=GLOBALDATA()
+	HyperParameters=HYPERPARAMETERS(
+		RoomNumber=6,
+		MinSubspace=2,
+		MaxSubspace=10
+		)
+	Features=FEATURES(
+		Width=1000,
+		Depth=1700,
+		TrueNorth=60,
+		EntrancePosition=0.80,
+		ActiveRooms=4
+		)
 
-	PlanGenerator.GenerateFrom(GlobalData=GlobalData,SubspaceDiscription=RandomNumberMaker.GenerateRandom(NumberOfSubspaces=32))
+	Run=True
+	while Run:
+		NumericData=NumericDataMaker.RandomNumericData(NumberOfSubspaces=32)
+		Plan=PlanMaker.GeneratePlanFromNumericData(
+			HyperParameters=HyperParameters,
+			Features=Features,
+			NumericData=NumericData
+			)
+		if RunOnlyOne:
+			Run=False
+		else:
+			time.sleep(1)
+
+	# if Plan.Score.Dead:
+	# 	## ...
+	# 	pass
+	# Score=PatternCheck.Scoring(Plan)
+	##
 	t1=time.time()
 	print(t1-t0)
-	# while 1:
-	# 	PlanGenerator.GenerateFrom(GlobalData=GlobalData,SubspaceDiscription=RandomNumberMaker.GenerateRandom(NumberOfSubspaces=32))
-	# 	time.sleep(1)
+	##
+
+
+
+
+
+
 
 
 if __name__ == '__main__':
+	reload(NumericDataMaker)
+	reload(PlanMaker)
+	reload(PatternCheck)
+	reload(TextBasedGraphicExport)
 	main()

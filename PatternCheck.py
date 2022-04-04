@@ -1,1 +1,5 @@
-print(3)
+
+
+
+def Scoring(Plan):
+	pass
