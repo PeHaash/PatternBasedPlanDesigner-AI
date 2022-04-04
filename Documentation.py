@@ -8,8 +8,8 @@
 5: Entrance Room
 6: --- (pazirayi) """
 
-NumericData --> Plan --> Scoring
-Plan=[Subspace + Features + Scoring + Maybe Room]
+# NumericData --> Plan --> Scoring
+# Plan=[Subspace + Features + Scoring + Maybe Room]
 
 
 "Why can't I sing along with some feeling, or some meaning?\
