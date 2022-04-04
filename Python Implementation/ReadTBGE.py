@@ -60,7 +60,6 @@ def Draw(line, ShapeOutput, ShapeColorOutput, TextOutput, TextPositionOutput, Te
 
     # Main Variables:
     HasStroke = False if "NOSTROKE" in keys and keys["NOSTROKE"].upper() == "YES" else True
-    # print(HasStroke,keys["NOSTROKE"])
     GeoStrokeShape = None  #
     GeoStrokeColor = SetColorFromKeys("Stroke", keys)
 
@@ -97,6 +96,7 @@ def Draw(line, ShapeOutput, ShapeColorOutput, TextOutput, TextPositionOutput, Te
         if command == "LINE":
             GeoStrokeShape = gh.RuledSurface(
                 gh.OffsetCurve(GeoStrokeShape, tx / 2, PLANE, 1), gh.OffsetCurve(GeoStrokeShape, -tx / 2, PLANE, 1))
+
         if command == "RECTANGLE":
             pass
             # GeoStrokeShape=gh.JoinCurves(gh.OffsetCurve(GeoStrokeShape, tx/2,PLANE,0),False)
