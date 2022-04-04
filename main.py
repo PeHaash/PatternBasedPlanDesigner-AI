@@ -1,13 +1,22 @@
 ## to be exported by anaconda!
 from importlib import reload
-import time
+
 
 import NumericDataMaker
 import PlanMaker
 import PatternCheck
 import TextBasedGraphicExport
+import SpeedTracker
+import GeneticAlgorithm
 
-
+def ReloadAllImports():
+	reload(NumericDataMaker)
+	reload(PlanMaker)
+	reload(PatternCheck)
+	reload(TextBasedGraphicExport)
+	reload(SpeedTracker)
+	reload(GeneticAlgorithm)
+	
 
 class HYPERPARAMETERS:
 	def __init__(self, RoomNumber, MinSubspace, MaxSubspace, DateCode):
@@ -24,6 +33,7 @@ class FEATURES:
 		self.EntrancePosition=EntrancePosition
 		self.ActiveRooms=ActiveRooms
 
+
 """
 NumericalExpressionOfPlan
 NumericData --> some numbers, only
@@ -33,7 +43,7 @@ Subspace
 
 
 
-def main():
+def mainOld():
 	RunOnlyOne=True
 	##
 	t0=time.time()
@@ -41,10 +51,10 @@ def main():
 	# TextBasedGraphicExport.SetDateCode("22-03-06")
 
 	HyperParameters=HYPERPARAMETERS(
-		RoomNumber=2,
+		RoomNumber=4,
 		MinSubspace=2,
 		MaxSubspace=10,
-		DateCode="22-03-07"
+		DateCode="22-03-08"
 		)
 	Features=FEATURES(
 		Width=1000,
@@ -54,6 +64,7 @@ def main():
 		ActiveRooms=[1,1,1,1,1,1]
 		)
 
+
 	Run=True
 	while Run:
 		NumericData=NumericDataMaker.RandomNumericData(NumberOfSubspaces=16)
@@ -62,6 +73,7 @@ def main():
 			Features=Features,
 			NumericData=NumericData
 			)
+		print("Plan Score is:",Plan.Score)
 		if RunOnlyOne:
 			Run=False
 		else:
@@ -80,12 +92,94 @@ def main():
 
 
 
+def main():
+	### Speed Check
+	st=SpeedTracker.SPEEDTRACKER()
+	### Initials
+	HyperParameters=HYPERPARAMETERS(
+		RoomNumber=4,
+		MinSubspace=2,
+		MaxSubspace=10,
+		DateCode="22-03-08"
+		)
+	Features=FEATURES(
+		Width=1000,
+		Depth=1700,
+		TrueNorth=60,
+		EntrancePosition=0.80,
+		ActiveRooms=[1,1,1,1,1,1]
+		)
+	Plans=[PlanMaker.GeneratePlanFromNumericData(
+				HyperParameters=HyperParameters,
+				Features=Features,
+				NumericData=NumericDataMaker.RandomNumericData(NumberOfSubspaces=16)
+			) for i in range(100)
+		]
+	Plans.sort(key=lambda x:-x.Score)
+	for pl in Plans:
+		print(pl.Score)
 
+
+
+	st.Lap()
 
 
 if __name__ == '__main__':
-	reload(NumericDataMaker)
-	reload(PlanMaker)
-	reload(PatternCheck)
-	reload(TextBasedGraphicExport)
+	ReloadAllImports()
 	main()
+
+
+def mainGA():
+	### Initials
+	HyperParameters=HYPERPARAMETERS(
+		RoomNumber=4,
+		MinSubspace=2,
+		MaxSubspace=10,
+		DateCode="22-03-08"
+		)
+	Features=FEATURES(
+		Width=1000,
+		Depth=1700,
+		TrueNorth=60,
+		EntrancePosition=0.80,
+		ActiveRooms=[1,1,1,1,1,1]
+		)
+
+	Gene=GeneticAlgorithm.SPECIES(
+		SizeOfSet=100,
+		DataShape=[16,8],
+		FitnessFunction=PlanMaker.FitnessFunction,
+		Features=Features,
+		HyperParameters=HyperParameters,
+		SurvivalRate=0.5,
+		MutationRate=0.1,
+		MutationMove=0.1
+		)
+
+
+	RowSize=10 ## 
+	Gap=30 ## cm
+	for i in range(100):
+		Gene.RunGeneration()
+		print(Gene.BestScore())
+		BestPlanNow=PlanMaker.GeneratePlanFromNumericData(
+			Features=Features,
+			HyperParameters=HyperParameters,
+			NumericData=Gene.BestSpecies)
+		BestPlanNow.ExportTBGE(Point0=((i%RowSize)*(Features.Width+Gap),(i//RowSize)*(Features.Depth+Gap)),Append=True)
+
+
+
+	Plans=[PlanMaker.GeneratePlanFromNumericData(
+				HyperParameters=HyperParameters,
+				Features=Features,
+				NumericData=NumericDataMaker.RandomNumericData(NumberOfSubspaces=16)
+			) for i in range(100)
+		]
+	Plans.sort(key=lambda x:-x.Score)
+	for pl in Plans:
+		print(pl.Score)
+
+
+
+	st.Lap()

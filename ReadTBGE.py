@@ -14,7 +14,7 @@ def ColorByCode(Code):
     base5=[Code%5,(Code//5)%5,(Code//25)]
     convert=[0,63,127,191,255]
     rgb=[convert[b] for b in base5]
-    return gh.ColourRGB(255,rgb[0],rgb[1],rgb[2])
+    return gh.ColourRGB(160,rgb[0],rgb[1],rgb[2])
     """
     0:0
     1:64
@@ -24,7 +24,7 @@ def ColorByCode(Code):
     """
 
 def SetColorFromKeys(ColorType,keys,default=(0,0,0)):
-    Color=gh.ColourRGB(255,default[0],default[1],default[2])
+    Color=gh.ColourRGB(160,default[0],default[1],default[2])
     # print(ColorType+"ColorCode")
     # print(keys)
     ColorType=ColorType.upper()

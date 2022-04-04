@@ -24,7 +24,7 @@ class TBGE:
         # pass
     def Clear(self):
         self.Output=[]
-    def End(self):
+    def End(self,Point0):
         with open(self.Address,"w") as file:
             file.writelines(self.Output)
 
