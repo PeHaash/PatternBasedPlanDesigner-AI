@@ -1,0 +1,53 @@
+LINE: X0=0 Y0=1222 X1=273 Y1=1222 Thickness=10 Text='Door' StrokeColorCode=0
+LINE: X0=136.5 Y0=1461.0 X1=205.0 Y1=1006.0 StrokeColorCode=64 Thickness=5
+LINE: X0=372.0 Y0=1461.0 X1=440.5 Y1=1006.0 StrokeColorCode=64 Thickness=5
+LINE: X0=372.0 Y0=1461.0 X1=205.0 Y1=1006.0 StrokeColorCode=64 Thickness=5
+LINE: X0=0 Y0=176 X1=230 Y1=176 Thickness=10 Text='Door' StrokeColorCode=0
+LINE: X0=127.0 Y0=483.0 X1=115.0 Y1=88.0 StrokeColorCode=64 Thickness=5
+LINE: X0=127.0 Y0=483.0 X1=391.5 Y1=88.0 StrokeColorCode=64 Thickness=5
+LINE: X0=403.5 Y0=483.0 X1=391.5 Y1=88.0 StrokeColorCode=64 Thickness=5
+LINE: X0=895.0 Y0=676.5 X1=685.0 Y1=281.5 StrokeColorCode=64 Thickness=5
+LINE: X0=895.0 Y0=676.5 X1=908.5 Y1=281.5 StrokeColorCode=64 Thickness=5
+LINE: X0=671.5 Y0=676.5 X1=685.0 Y1=281.5 StrokeColorCode=64 Thickness=5
+LINE: X0=776.5 Y0=1065.5 X1=895.0 Y1=676.5 StrokeColorCode=64 Thickness=5
+LINE: X0=776.5 Y0=1065.5 X1=671.5 Y1=676.5 StrokeColorCode=64 Thickness=5
+LINE: X0=440.5 Y0=1006.0 X1=403.5 Y1=483.0 StrokeColorCode=64 Thickness=5
+LINE: X0=0 Y0=790 X1=254 Y1=790 Thickness=10 Text='Door' StrokeColorCode=0
+LINE: X0=205.0 Y0=1006.0 X1=127.0 Y1=483.0 StrokeColorCode=64 Thickness=5
+LINE: X0=205.0 Y0=1006.0 X1=403.5 Y1=483.0 StrokeColorCode=64 Thickness=5
+LINE: X0=471 Y0=790 X1=553 Y1=790 Thickness=10 Text='Door' StrokeColorCode=0
+LINE: X0=512.0 Y0=1065.5 X1=403.5 Y1=483.0 StrokeColorCode=64 Thickness=5
+LINE: X0=766.5 Y0=1520.5 X1=776.5 Y1=1065.5 StrokeColorCode=64 Thickness=5
+LINE: X0=766.5 Y0=1520.5 X1=512.0 Y1=1065.5 StrokeColorCode=64 Thickness=5
+LINE: X0=502.0 Y0=1520.5 X1=512.0 Y1=1065.5 StrokeColorCode=64 Thickness=5
+LINE: X0=372.0 Y0=1461.0 X1=136.5 Y1=1461.0 StrokeColorCode=64 Thickness=5
+LINE: X0=766.5 Y0=1520.5 X1=502.0 Y1=1520.5 StrokeColorCode=64 Thickness=5
+LINE: X0=895.0 Y0=676.5 X1=671.5 Y1=676.5 StrokeColorCode=64 Thickness=5
+LINE: X0=512.0 Y0=1065.5 X1=440.5 Y1=1006.0 StrokeColorCode=64 Thickness=5
+LINE: X0=512.0 Y0=1065.5 X1=372.0 Y1=1461.0 StrokeColorCode=64 Thickness=5
+LINE: X0=502.0 Y0=1520.5 X1=372.0 Y1=1461.0 StrokeColorCode=64 Thickness=5
+LINE: X0=440.5 Y0=1006.0 X1=205.0 Y1=1006.0 StrokeColorCode=64 Thickness=5
+LINE: X0=391.5 Y0=88.0 X1=115.0 Y1=88.0 StrokeColorCode=64 Thickness=5
+LINE: X0=685.0 Y0=281.5 X1=391.5 Y1=88.0 StrokeColorCode=64 Thickness=5
+LINE: X0=685.0 Y0=281.5 X1=403.5 Y1=483.0 StrokeColorCode=64 Thickness=5
+LINE: X0=671.5 Y0=676.5 X1=403.5 Y1=483.0 StrokeColorCode=64 Thickness=5
+LINE: X0=776.5 Y0=1065.5 X1=512.0 Y1=1065.5 StrokeColorCode=64 Thickness=5
+LINE: X0=908.5 Y0=281.5 X1=685.0 Y1=281.5 StrokeColorCode=64 Thickness=5
+LINE: X0=254 Y0=176 X1=254 Y1=790 Thickness=10 Text='Door' StrokeColorCode=0
+LINE: X0=403.5 Y0=483.0 X1=127.0 Y1=483.0 StrokeColorCode=64 Thickness=5
+RECTANGLE: X0=0 Y0=0 X1=230 Y1=176 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-1'
+RECTANGLE: X0=230 Y0=0 X1=553 Y1=176 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-1'
+RECTANGLE: X0=553 Y0=0 X1=817 Y1=563 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-2'
+RECTANGLE: X0=817 Y0=0 X1=1000 Y1=563 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-4'
+RECTANGLE: X0=0 Y0=176 X1=254 Y1=790 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-1'
+RECTANGLE: X0=254 Y0=176 X1=553 Y1=790 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-0'
+RECTANGLE: X0=790 Y0=563 X1=1000 Y1=790 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-3'
+RECTANGLE: X0=553 Y0=563 X1=790 Y1=790 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-5'
+RECTANGLE: X0=553 Y0=790 X1=1000 Y1=1341 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-1'
+RECTANGLE: X0=410 Y0=790 X1=471 Y1=1222 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-4'
+RECTANGLE: X0=0 Y0=790 X1=410 Y1=1222 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-2'
+RECTANGLE: X0=0 Y0=1222 X1=273 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-0'
+RECTANGLE: X0=471 Y0=790 X1=553 Y1=1341 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-2'
+RECTANGLE: X0=533 Y0=1341 X1=1000 Y1=1700 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-0'
+RECTANGLE: X0=273 Y0=1222 X1=471 Y1=1700 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-0'
+RECTANGLE: X0=471 Y0=1341 X1=533 Y1=1700 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-3'
