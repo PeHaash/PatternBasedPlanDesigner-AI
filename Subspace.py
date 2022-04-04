@@ -12,7 +12,7 @@ class SUBSPACE:
         self.IsFenestrated=1 if numericDiscrip[7]>0.5 else 0
         self.Position=[]
         self.IsEntranceDoor=False
-    def print(self):
+    def Print(self):
     	print("Xpos",self.Xposition,end="-")
     	print("Ypos",self.Yposition,end="-")
     	print("Room",self.Room,end=": ")

@@ -10,10 +10,11 @@ import TextBasedGraphicExport
 
 
 class HYPERPARAMETERS:
-	def __init__(self,RoomNumber,MinSubspace,MaxSubspace):
+	def __init__(self, RoomNumber, MinSubspace, MaxSubspace, DateCode):
 		self.RoomNumber=RoomNumber
 		self.MinSubspace=MinSubspace
 		self.MaxSubspace=MaxSubspace
+		self.DateCode=DateCode
 
 class FEATURES:
 	def __init__(self,Width,Depth,ActiveRooms,TrueNorth,EntrancePosition):
@@ -37,24 +38,25 @@ def main():
 	##
 	t0=time.time()
 	##
-	TextBasedGraphicExport.SetDateCode("22-03-06")
+	# TextBasedGraphicExport.SetDateCode("22-03-06")
 
 	HyperParameters=HYPERPARAMETERS(
-		RoomNumber=6,
+		RoomNumber=2,
 		MinSubspace=2,
-		MaxSubspace=10
+		MaxSubspace=10,
+		DateCode="22-03-06"
 		)
 	Features=FEATURES(
 		Width=1000,
 		Depth=1700,
 		TrueNorth=60,
 		EntrancePosition=0.80,
-		ActiveRooms=4
+		ActiveRooms=[1,1,1,1,1,1]
 		)
 
 	Run=True
 	while Run:
-		NumericData=NumericDataMaker.RandomNumericData(NumberOfSubspaces=32)
+		NumericData=NumericDataMaker.RandomNumericData(NumberOfSubspaces=16)
 		Plan=PlanMaker.GeneratePlanFromNumericData(
 			HyperParameters=HyperParameters,
 			Features=Features,
