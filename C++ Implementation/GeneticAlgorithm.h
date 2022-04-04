@@ -1,89 +1,92 @@
 #include <iostream>
 #include <vector>
-#include <string>
-// #include <cstdlib>
-// #include <ctime>
+// #include <string>
 #include <functional>
 #include <algorithm>
 
 #include "Random.h"
 
-using namespace std;
-
-
-namespace GeneticAlgorithm{
-	class SPECIES;
-	class POPULATION;
+namespace nGeneticAlgorithm{
+	struct Species;
+	class Population;
 }
 
-class GeneticAlgorithm::SPECIES{
-	public:
-		vector<float> Data;
-		float Score;
-		SPECIES(const vector<float>& data){
-			Data=data;
-			Score = 0;
-		}
+struct nGeneticAlgorithm::Species{
+	std::vector<float> Data;
+	float Score;
+	Species(const std::vector<float>& data){
+		Data=data;
+		Score = 0;
+	}
 };
 
-
-class GeneticAlgorithm::POPULATION{
+class nGeneticAlgorithm::Population{
 	private:
 		int PopulationSize, DataSize, EliteSize;
-		function<float(vector<float>)> ScoreFunction;
+		std::function<float(std::vector<float>)> ScoreFunction;
 		float MutationRate, MutationMove;
-		vector<SPECIES> Species;
+		std::vector<Species> mSpecies;
 	public:
-		POPULATION(int popsize, int datasize, int elitesize, function<float(vector<float>)> scorefunc, float mrate, float mmove){
-			PopulationSize = popsize;
-			DataSize = datasize;
-			EliteSize = elitesize;
-			ScoreFunction = scorefunc;
-			MutationRate = mrate;
-			MutationMove = mmove;
-			// srand(time(NULL));
-			Random::SetRandomSeed();
-			for (int i = 0; i < PopulationSize; i++){
-				vector<float> randomdata;
-				for (int j=0; j < DataSize; j++){
-					randomdata.push_back(Random::random());
-					// cout << (float)rand()/RAND_MAX <<endl;
-				}
-				Species.push_back(SPECIES(randomdata));
-			}
-		}
-
-		SPECIES Mutate(SPECIES s){
-			for(int i = 0; i < DataSize; i++)
-				if (Random::random() < MutationRate)
-					s.Data[i]=Random::random(); //*MutationMove
-			return s;
-		}
-
-		void RunGeneration(){
-			// Scoring
-			for (int i = 0; i < PopulationSize; i++)
-				Species[i].Score=ScoreFunction(Species[i].Data);
-			// Sort By Score
-			sort(Species.begin(),Species.end(),[](SPECIES a, SPECIES b) { return a.Score > b.Score;});
-			// Kill Excess & Mutate
-			vector<SPECIES> NewSpecies;
-			NewSpecies.push_back(Species[0]);
-			for(int i = 1; i < PopulationSize; i++){
-				int p = rand() % EliteSize;
-				NewSpecies.push_back(Mutate(Species[p]));
-			}
-			Species = NewSpecies;
-		}
-
-		float BestScore(){
-			return Species[0].Score;
-		}
-
-		void PrintBestData(){
-			for(int i = 0; i < DataSize; i++)
-				cout << Species[0].Data[i] << "-";
-			cout << endl;
-		}
+		Population(int, int, int, std::function<float(std::vector<float>)>, float, float);
+		Species Mutate(Species s);
+		void RunGeneration();
+		float GetBestScore();
+		void PrintBestData();
 };
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+nGeneticAlgorithm::Population::Population(int popsize, int datasize, int elitesize,
+					std::function<float(std::vector<float>)> scorefunc, float mrate, float mmove){
+	PopulationSize = popsize;
+	DataSize = datasize;
+	EliteSize = elitesize;
+	ScoreFunction = scorefunc;
+	MutationRate = mrate;
+	MutationMove = mmove;
+	// srand(time(NULL));
+	nRandom::SetRandomSeed();
+	for (int i = 0; i < PopulationSize; i++){
+		std::vector<float> randomdata;
+		for (int j=0; j < DataSize; j++){
+			randomdata.push_back(nRandom::random());
+			// cout << (float)rand()/RAND_MAX <<endl;
+		}
+		mSpecies.push_back(Species(randomdata));
+	}
+}
+
+nGeneticAlgorithm::Species nGeneticAlgorithm::Population::Mutate(Species s){
+	for(int i = 0; i < DataSize; i++)
+		if (nRandom::random() < MutationRate)
+			s.Data[i]=nRandom::random(); //*MutationMove
+	return s;
+}
+
+void nGeneticAlgorithm::Population::RunGeneration(){
+	// Scoring
+	for (int i = 0; i < PopulationSize; i++)
+		mSpecies[i].Score=ScoreFunction(mSpecies[i].Data);
+	// Sort By Score
+	std::sort(mSpecies.begin(),mSpecies.end(),[](Species a, Species b) { return a.Score > b.Score;});
+	// Kill Excess & Mutate
+	std::vector<Species> NewSpecies;
+	NewSpecies.push_back(mSpecies[0]);
+	for(int i = 1; i < PopulationSize; i++){
+		int p = rand() % EliteSize;
+		NewSpecies.push_back(Mutate(mSpecies[p]));
+	}
+	mSpecies = NewSpecies;
+}
+
+float nGeneticAlgorithm::Population::GetBestScore(){
+	return mSpecies[0].Score;
+}
+
+void nGeneticAlgorithm::Population::PrintBestData(){
+	for(int i = 0; i < DataSize; i++)
+		std::cout << mSpecies[0].Data[i] << "-";
+	std::cout << std::endl;
+}
 
