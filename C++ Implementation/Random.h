@@ -9,8 +9,8 @@ namespace Random{
 	float random(){
 		return (float) rand() / RAND_MAX;
 	}
-	void SetRandomSeed(){
-		srand(time(NULL));
+	void SetRandomSeed(int seed=0){
+		srand(time(NULL)+seed);
 	}
 	float uniform();
 	int RandomBetween();

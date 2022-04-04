@@ -4,11 +4,10 @@
 #include <vector>
 #include <string>
 #include <fstream>
+// #include <iostream>
 // #include <sstream>
 
 
-
-using namespace std;
 
 namespace TextBasedGraphicExport{
 	class TBGE;
@@ -16,44 +15,53 @@ namespace TextBasedGraphicExport{
 
 class TextBasedGraphicExport::TBGE {
 private:
-	string Address;
+	std::string Address;
 	int size;
-	vector<string> Output;
+	std::vector<std::string> Output;
+	const std::string Root = "E:/PBPDAI/";
 public:
-	TBGE(string Folder, string FileName){
-		Address = "./" + Folder + "/" + FileName + ".TBGE";
+	TBGE(){};
+	TBGE(std::string Folder, std::string FileName){
+		Address = Root + Folder + "/" + FileName + ".TBGE";
 		size = 0;
+		Output.clear();
 	}
 
 	int SetFrame(int FrameNumber){
-		Output.push_back("FRAME: Code=" + FrameNumber + '\n');
-		return ++size;
+		// cout <<"dfd"<<endl;
+		Output.push_back("FRAME: Code=" + std::to_string(FrameNumber));
+		return size++;
 	}
 
 	template <typename T>
 	int AddLine(T x0, T y0, T x1, T y1){
-		Output.push_back("LINE: x0=" + to_string(x0) +
-			"y0=" + to_string(y0) +
-			"x1=" + to_string(x1) +
-			"y1=" + to_string(y1)
+		Output.push_back("LINE: x0=" + std::to_string(x0) +
+			" y0=" + std::to_string(y0) +
+			" x1=" + std::to_string(x1) +
+			" y1=" + std::to_string(y1)
 			);
-		return ++size;
+		return size++;
 	}
 
 	template <typename T>	
-	int AddRectangle(vector<T> Pos){
+	int AddRectangle(std::vector<T> Pos){
 		Output.push_back(
-			"RECTANGLE x0=" + to_string(Pos[0]) +
-			"y0=" + to_string(Pos[1]) +
-			"x1=" + to_string(Pos[2]) +
-			"y1=" + to_string(Pos[3])			
+			"RECTANGLE: x0=" + std::to_string(Pos[0]) +
+			" y0=" + std::to_string(Pos[1]) +
+			" x1=" + std::to_string(Pos[2]) +
+			" y1=" + std::to_string(Pos[3])			
 			);
-		return ++size;
+		return size++;
+	}
+
+	int AddArgument(int line, std::string arg, std::string state){
+		Output[line]+= " " + arg + "=\"" + state + "\" ";
+		return line;
 	}
 
 	template <typename T>
-	int AddArgument(int line, string arg, T state){
-		Output[line]+= arg + "=" + to_string(state) + " ";
+	int AddArgument(int line, std::string arg, T state){
+		Output[line]+= " " + arg + "=" + std::to_string(state) + " ";
 		return line;
 	}
 
@@ -63,16 +71,12 @@ public:
 	}
 
 	void End(){
-		fstream fin = fstream(Address);
+		std::ofstream fout(Address);
 		for(int i = 0; i < size; i++){
-			fin << Output[i] <<'\n';
+			fout << Output[i] <<'\n';
 		}
-		fin.close();
+		fout.close();
 	}
-
-	
-
-
 
 };
 

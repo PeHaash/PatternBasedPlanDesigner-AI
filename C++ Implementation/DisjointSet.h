@@ -1,25 +1,21 @@
 // Disjoint Set in c++
 #include <vector>
-#include <iostream>
 #include <numeric>
 #include <bits/stdc++.h>
-// #in
-using namespace std;
 
 namespace DisjointSet{
 	class DISJOINTSET;
 }
 
-// std::vector<int> second (4,100);                       // four ints with value 100
-
 class DisjointSet::DISJOINTSET{
 	private:
-		vector<int> Par;
+		std::vector<int> Par;
 		int NumberOfSets;
 		int NumberOfElements;
 	public:
+		DISJOINTSET() = default;  // vase in ke betoonam alaki tarifesh konam ke ba'dan kamel she
 		DISJOINTSET(int n){
-			Par = vector<int> (n,-1);
+			Par = std::vector<int> (n,-1);
 			NumberOfSets = n;
 			NumberOfElements = n;
 		}
@@ -36,8 +32,8 @@ class DisjointSet::DISJOINTSET{
 		int NumOfSets(){
 			return NumberOfSets;
 		}
-		int DisjointnessOfElements(vector<int> indexes){
-			vector<int> dsize (NumberOfElements, 0);
+		int DisjointnessOfElements(std::vector<int> indexes){
+			std::vector<int> dsize (NumberOfElements, 0);
 			for(unsigned int i = 0; i < indexes.size(); i++){
 				dsize[Parent(indexes[i])]++;
 			}
@@ -45,11 +41,11 @@ class DisjointSet::DISJOINTSET{
 		}
 };
 
-int main(){
-	DisjointSet::DISJOINTSET joon(5);
-	joon.Join(1,4);
-	joon.Join(1,3);
-	cout <<joon.Parent(4)<<" "<<joon.DisjointnessOfElements({0,1,2,3,4})<< endl;
+// int main(){
+// 	DisjointSet::DISJOINTSET joon(5);
+// 	joon.Join(1,4);
+// 	joon.Join(1,3);
+// 	cout <<joon.Parent(4)<<" "<<joon.DisjointnessOfElements({0,1,2,3,4})<< endl;
 
-	return 0;
-}
+// 	return 0;
+// }
