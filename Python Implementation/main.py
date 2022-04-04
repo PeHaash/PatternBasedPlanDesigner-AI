@@ -153,16 +153,18 @@ def main():
         Gene.RunGeneration()
         print("Generation #{} Best Score:{}".format(i + 1, Gene.BestScore()))
         # print(Gene.BestData())
-        bData = Gene.BestData()
-        bData2d = [[bData[i * 8 + j]for j in range(8)] for i in range(16)]
-        PlanMaker.GeneratePlanFromNumericData(
-            Features=Features,
-            HyperParameters=HyperParameters,
-            NumericData=bData2d,
-            TBGEElement=ExportPlace,
-            TBGEFrame=i)
+        # bData = Gene.BestData()
+        # bData2d = [[bData[i * 8 + j]for j in range(8)] for i in range(16)]
+        # PlanMaker.GeneratePlanFromNumericData(
+        #     Features=Features,
+        #     HyperParameters=HyperParameters,
+        #     NumericData=bData2d,
+        #     TBGEElement=ExportPlace,
+        #     TBGEFrame=i)
+
         # BestPlanNow.ExportTBGE()
         if Gene.BestScore() >= GoalScore:
+
             print("yooohoooooo!!!!")
             break
     ExportPlace.End()
