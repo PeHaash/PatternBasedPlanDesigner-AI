@@ -2,6 +2,7 @@
 #define SUBSPACE_H
 
 #include <vector>
+#include <iostream>
 
 #include "Global.h"
 // #include "Features.h"
@@ -30,6 +31,12 @@ public:
 		HasOpening = numericDiscrip[6] > 0.5 ? true : false;
 		IsFenestrated = numericDiscrip[7] > 0.5 ? true : false;
 		IsEntranceDoor = false;
+	}
+	void Print()
+	{
+		cout << "Xpos: " << Xposition << '-';
+		cout << "Ypos: " << Yposition << '-';
+		cout << "Room: " << Room << ": " << SubspaceCode <<endl; 
 	}
 };
 
