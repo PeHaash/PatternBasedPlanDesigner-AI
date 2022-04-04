@@ -164,12 +164,11 @@ class PLAN:
 						self.GraphicExport.AddLine(Center(self.Subspace[r1].Position),Center(self.Subspace[r2].Position))
 
 	def ExportTBGE(self):
-		# Export=TextBasedGraphicExport.TBGE(FileName="Export", DateCode=self.HyperParameters.DateCode)
 		for o in self.Subspace:
 			self.GraphicExport.AddRectangle(
 				position=o.Position,
-				Thickness=30,
-				FillColorCode=12,
+				Thickness=0,
+				FillColorCode=o.Room*17,
 				StrokeColorCode=1,
 				text="-".join([str(o.Room),str(o.SubspcaceCode)])
 			)

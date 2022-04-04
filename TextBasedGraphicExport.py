@@ -19,9 +19,11 @@ class TBGE:
         for key,value in ArgumentsTemp.items():  ## For Optional Args
             value= "'"+(value)+"'" if type(value)==type(" ") else str(value)
             Arguments[key]=value
-        Command= "REC: " + " ".join( ["{}={}".format(key,value) for key,value in Arguments.items()] ) +'\n'
+        Command= "RECTANGLE: " + " ".join( ["{}={}".format(key,value) for key,value in Arguments.items()] ) +'\n'
         self.Output.append(Command)
         # pass
+    def Clear(self):
+        self.Output=[]
     def End(self):
         with open(self.Address,"w") as file:
             file.writelines(self.Output)
