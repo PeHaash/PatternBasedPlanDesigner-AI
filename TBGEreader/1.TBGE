@@ -1,0 +1,750 @@
+FRAME: Code=0
+LINE: X0=415.5 Y0=660.0 X1=240.5 Y1=289.5 StrokeColorCode=64 Thickness=5
+LINE: X0=415.5 Y0=660.0 X1=493.0 Y1=289.5 StrokeColorCode=64 Thickness=5
+LINE: X0=163.0 Y0=660.0 X1=240.5 Y1=289.5 StrokeColorCode=64 Thickness=5
+LINE: X0=65.0 Y0=978.0 X1=163.0 Y1=660.0 StrokeColorCode=64 Thickness=5
+LINE: X0=779.5 Y0=949.0 X1=971.5 Y1=597.5 StrokeColorCode=64 Thickness=5
+LINE: X0=779.5 Y0=949.0 X1=724.0 Y1=597.5 StrokeColorCode=64 Thickness=5
+LINE: X0=249.5 Y0=978.0 X1=415.5 Y1=660.0 StrokeColorCode=64 Thickness=5
+LINE: X0=249.5 Y0=978.0 X1=163.0 Y1=660.0 StrokeColorCode=64 Thickness=5
+LINE: X0=464.0 Y0=949.0 X1=724.0 Y1=597.5 StrokeColorCode=64 Thickness=5
+LINE: X0=464.0 Y0=949.0 X1=415.5 Y1=660.0 StrokeColorCode=64 Thickness=5
+LINE: X0=971.5 Y0=597.5 X1=839.5 Y1=227.0 StrokeColorCode=64 Thickness=5
+LINE: X0=724.0 Y0=597.5 X1=592.0 Y1=227.0 StrokeColorCode=64 Thickness=5
+LINE: X0=724.0 Y0=597.5 X1=839.5 Y1=227.0 StrokeColorCode=64 Thickness=5
+LINE: X0=503.0 Y0=1428.5 X1=779.5 Y1=949.0 StrokeColorCode=64 Thickness=5
+LINE: X0=503.0 Y0=1428.5 X1=464.0 Y1=949.0 StrokeColorCode=64 Thickness=5
+LINE: X0=818.5 Y0=1428.5 X1=779.5 Y1=949.0 StrokeColorCode=64 Thickness=5
+LINE: X0=89.5 Y0=1457.5 X1=65.0 Y1=978.0 StrokeColorCode=64 Thickness=5
+LINE: X0=89.5 Y0=1457.5 X1=249.5 Y1=978.0 StrokeColorCode=64 Thickness=5
+LINE: X0=274.0 Y0=1457.5 X1=249.5 Y1=978.0 StrokeColorCode=64 Thickness=5
+LINE: X0=249.5 Y0=978.0 X1=65.0 Y1=978.0 StrokeColorCode=64 Thickness=5
+LINE: X0=415.5 Y0=660.0 X1=163.0 Y1=660.0 StrokeColorCode=64 Thickness=5
+LINE: X0=493.0 Y0=289.5 X1=240.5 Y1=289.5 StrokeColorCode=64 Thickness=5
+LINE: X0=839.5 Y0=227.0 X1=592.0 Y1=227.0 StrokeColorCode=64 Thickness=5
+LINE: X0=971.5 Y0=597.5 X1=724.0 Y1=597.5 StrokeColorCode=64 Thickness=5
+LINE: X0=779.5 Y0=949.0 X1=464.0 Y1=949.0 StrokeColorCode=64 Thickness=5
+LINE: X0=464.0 Y0=949.0 X1=249.5 Y1=978.0 StrokeColorCode=64 Thickness=5
+LINE: X0=503.0 Y0=1428.5 X1=249.5 Y1=978.0 StrokeColorCode=64 Thickness=5
+LINE: X0=503.0 Y0=1428.5 X1=274.0 Y1=1457.5 StrokeColorCode=64 Thickness=5
+LINE: X0=274.0 Y0=1457.5 X1=89.5 Y1=1457.5 StrokeColorCode=64 Thickness=5
+LINE: X0=592.0 Y0=227.0 X1=493.0 Y1=289.5 StrokeColorCode=64 Thickness=5
+LINE: X0=724.0 Y0=597.5 X1=493.0 Y1=289.5 StrokeColorCode=64 Thickness=5
+LINE: X0=724.0 Y0=597.5 X1=415.5 Y1=660.0 StrokeColorCode=64 Thickness=5
+LINE: X0=818.5 Y0=1428.5 X1=503.0 Y1=1428.5 StrokeColorCode=64 Thickness=5
+RECTANGLE: X0=0 Y0=0 X1=481 Y1=579 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-3'
+RECTANGLE: X0=505 Y0=0 X1=679 Y1=454 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-5'
+RECTANGLE: X0=679 Y0=0 X1=1000 Y1=454 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-1'
+RECTANGLE: X0=943 Y0=454 X1=1000 Y1=741 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-0'
+RECTANGLE: X0=481 Y0=0 X1=505 Y1=579 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-0'
+RECTANGLE: X0=505 Y0=454 X1=943 Y1=741 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-2'
+RECTANGLE: X0=326 Y0=579 X1=505 Y1=741 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-2'
+RECTANGLE: X0=0 Y0=579 X1=326 Y1=741 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-1'
+RECTANGLE: X0=0 Y0=741 X1=130 Y1=1215 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-1'
+RECTANGLE: X0=559 Y0=741 X1=1000 Y1=1157 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-3'
+RECTANGLE: X0=130 Y0=741 X1=369 Y1=1215 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-1'
+RECTANGLE: X0=0 Y0=1215 X1=179 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-4'
+RECTANGLE: X0=369 Y0=741 X1=559 Y1=1157 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-4'
+RECTANGLE: X0=369 Y0=1157 X1=637 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-0'
+RECTANGLE: X0=637 Y0=1157 X1=1000 Y1=1700 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-0'
+RECTANGLE: X0=179 Y0=1215 X1=369 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-2'
+FRAME: Code=1
+LINE: X0=116.0 Y0=1198.5 X1=350.0 Y1=734.5 StrokeColorCode=64 Thickness=5
+LINE: X0=116.0 Y0=1198.5 X1=39.0 Y1=734.5 StrokeColorCode=64 Thickness=5
+LINE: X0=843.0 Y0=1133.0 X1=931.5 Y1=717.5 StrokeColorCode=64 Thickness=5
+LINE: X0=843.0 Y0=1133.0 X1=742.5 Y1=717.5 StrokeColorCode=64 Thickness=5
+LINE: X0=549.5 Y0=1133.0 X1=350.0 Y1=734.5 StrokeColorCode=64 Thickness=5
+LINE: X0=549.5 Y0=1133.0 X1=742.5 Y1=717.5 StrokeColorCode=64 Thickness=5
+LINE: X0=322.5 Y0=1198.5 X1=350.0 Y1=734.5 StrokeColorCode=64 Thickness=5
+LINE: X0=838.5 Y0=1451.5 X1=843.0 Y1=1133.0 StrokeColorCode=64 Thickness=5
+LINE: X0=838.5 Y0=1451.5 X1=549.5 Y1=1133.0 StrokeColorCode=64 Thickness=5
+LINE: X0=545.0 Y0=1451.5 X1=549.5 Y1=1133.0 StrokeColorCode=64 Thickness=5
+LINE: X0=931.5 Y0=717.5 X1=846.5 Y1=186.0 StrokeColorCode=64 Thickness=5
+LINE: X0=742.5 Y0=717.5 X1=657.5 Y1=186.0 StrokeColorCode=64 Thickness=5
+LINE: X0=742.5 Y0=717.5 X1=846.5 Y1=186.0 StrokeColorCode=64 Thickness=5
+LINE: X0=143.5 Y0=1517.0 X1=116.0 Y1=1198.5 StrokeColorCode=64 Thickness=5
+LINE: X0=143.5 Y0=1517.0 X1=322.5 Y1=1198.5 StrokeColorCode=64 Thickness=5
+LINE: X0=350.0 Y0=1517.0 X1=322.5 Y1=1198.5 StrokeColorCode=64 Thickness=5
+LINE: X0=350.0 Y0=734.5 X1=149.0 Y1=203.0 StrokeColorCode=64 Thickness=5
+LINE: X0=350.0 Y0=734.5 X1=460.0 Y1=203.0 StrokeColorCode=64 Thickness=5
+LINE: X0=39.0 Y0=734.5 X1=149.0 Y1=203.0 StrokeColorCode=64 Thickness=5
+LINE: X0=350.0 Y0=734.5 X1=39.0 Y1=734.5 StrokeColorCode=64 Thickness=5
+LINE: X0=549.5 Y0=1133.0 X1=322.5 Y1=1198.5 StrokeColorCode=64 Thickness=5
+LINE: X0=545.0 Y0=1451.5 X1=322.5 Y1=1198.5 StrokeColorCode=64 Thickness=5
+LINE: X0=545.0 Y0=1451.5 X1=350.0 Y1=1517.0 StrokeColorCode=64 Thickness=5
+LINE: X0=350.0 Y0=1517.0 X1=143.5 Y1=1517.0 StrokeColorCode=64 Thickness=5
+LINE: X0=931.5 Y0=717.5 X1=742.5 Y1=717.5 StrokeColorCode=64 Thickness=5
+LINE: X0=838.5 Y0=1451.5 X1=545.0 Y1=1451.5 StrokeColorCode=64 Thickness=5
+LINE: X0=322.5 Y0=1198.5 X1=116.0 Y1=1198.5 StrokeColorCode=64 Thickness=5
+LINE: X0=460.0 Y0=203.0 X1=149.0 Y1=203.0 StrokeColorCode=64 Thickness=5
+LINE: X0=657.5 Y0=186.0 X1=460.0 Y1=203.0 StrokeColorCode=64 Thickness=5
+LINE: X0=742.5 Y0=717.5 X1=460.0 Y1=203.0 StrokeColorCode=64 Thickness=5
+LINE: X0=742.5 Y0=717.5 X1=350.0 Y1=734.5 StrokeColorCode=64 Thickness=5
+LINE: X0=843.0 Y0=1133.0 X1=549.5 Y1=1133.0 StrokeColorCode=64 Thickness=5
+LINE: X0=846.5 Y0=186.0 X1=657.5 Y1=186.0 StrokeColorCode=64 Thickness=5
+RECTANGLE: X0=622 Y0=0 X1=693 Y1=372 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-8'
+RECTANGLE: X0=0 Y0=0 X1=298 Y1=406 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-1'
+RECTANGLE: X0=693 Y0=0 X1=1000 Y1=372 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-0'
+RECTANGLE: X0=298 Y0=0 X1=622 Y1=406 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-5'
+RECTANGLE: X0=78 Y0=406 X1=622 Y1=1063 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-4'
+RECTANGLE: X0=0 Y0=406 X1=78 Y1=1063 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-0'
+RECTANGLE: X0=863 Y0=372 X1=1000 Y1=1063 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-2'
+RECTANGLE: X0=622 Y0=372 X1=863 Y1=1063 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-3'
+RECTANGLE: X0=0 Y0=1063 X1=232 Y1=1334 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-1'
+RECTANGLE: X0=686 Y0=1063 X1=1000 Y1=1203 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-7'
+RECTANGLE: X0=413 Y0=1063 X1=686 Y1=1203 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-0'
+RECTANGLE: X0=232 Y0=1063 X1=413 Y1=1334 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-0'
+RECTANGLE: X0=0 Y0=1334 X1=287 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-1'
+RECTANGLE: X0=677 Y0=1203 X1=1000 Y1=1700 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-1'
+RECTANGLE: X0=413 Y0=1203 X1=677 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-9'
+RECTANGLE: X0=287 Y0=1334 X1=413 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-6'
+FRAME: Code=2
+LINE: X0=116.0 Y0=1198.5 X1=350.0 Y1=734.5 StrokeColorCode=64 Thickness=5
+LINE: X0=116.0 Y0=1198.5 X1=39.0 Y1=734.5 StrokeColorCode=64 Thickness=5
+LINE: X0=843.0 Y0=1133.0 X1=931.5 Y1=717.5 StrokeColorCode=64 Thickness=5
+LINE: X0=843.0 Y0=1133.0 X1=742.5 Y1=717.5 StrokeColorCode=64 Thickness=5
+LINE: X0=549.5 Y0=1133.0 X1=350.0 Y1=734.5 StrokeColorCode=64 Thickness=5
+LINE: X0=549.5 Y0=1133.0 X1=742.5 Y1=717.5 StrokeColorCode=64 Thickness=5
+LINE: X0=322.5 Y0=1198.5 X1=350.0 Y1=734.5 StrokeColorCode=64 Thickness=5
+LINE: X0=838.5 Y0=1451.5 X1=843.0 Y1=1133.0 StrokeColorCode=64 Thickness=5
+LINE: X0=838.5 Y0=1451.5 X1=549.5 Y1=1133.0 StrokeColorCode=64 Thickness=5
+LINE: X0=545.0 Y0=1451.5 X1=549.5 Y1=1133.0 StrokeColorCode=64 Thickness=5
+LINE: X0=931.5 Y0=717.5 X1=846.5 Y1=186.0 StrokeColorCode=64 Thickness=5
+LINE: X0=742.5 Y0=717.5 X1=657.5 Y1=186.0 StrokeColorCode=64 Thickness=5
+LINE: X0=742.5 Y0=717.5 X1=846.5 Y1=186.0 StrokeColorCode=64 Thickness=5
+LINE: X0=143.5 Y0=1517.0 X1=116.0 Y1=1198.5 StrokeColorCode=64 Thickness=5
+LINE: X0=143.5 Y0=1517.0 X1=322.5 Y1=1198.5 StrokeColorCode=64 Thickness=5
+LINE: X0=350.0 Y0=1517.0 X1=322.5 Y1=1198.5 StrokeColorCode=64 Thickness=5
+LINE: X0=350.0 Y0=734.5 X1=149.0 Y1=203.0 StrokeColorCode=64 Thickness=5
+LINE: X0=350.0 Y0=734.5 X1=460.0 Y1=203.0 StrokeColorCode=64 Thickness=5
+LINE: X0=39.0 Y0=734.5 X1=149.0 Y1=203.0 StrokeColorCode=64 Thickness=5
+LINE: X0=350.0 Y0=734.5 X1=39.0 Y1=734.5 StrokeColorCode=64 Thickness=5
+LINE: X0=549.5 Y0=1133.0 X1=322.5 Y1=1198.5 StrokeColorCode=64 Thickness=5
+LINE: X0=545.0 Y0=1451.5 X1=322.5 Y1=1198.5 StrokeColorCode=64 Thickness=5
+LINE: X0=545.0 Y0=1451.5 X1=350.0 Y1=1517.0 StrokeColorCode=64 Thickness=5
+LINE: X0=350.0 Y0=1517.0 X1=143.5 Y1=1517.0 StrokeColorCode=64 Thickness=5
+LINE: X0=931.5 Y0=717.5 X1=742.5 Y1=717.5 StrokeColorCode=64 Thickness=5
+LINE: X0=838.5 Y0=1451.5 X1=545.0 Y1=1451.5 StrokeColorCode=64 Thickness=5
+LINE: X0=322.5 Y0=1198.5 X1=116.0 Y1=1198.5 StrokeColorCode=64 Thickness=5
+LINE: X0=460.0 Y0=203.0 X1=149.0 Y1=203.0 StrokeColorCode=64 Thickness=5
+LINE: X0=657.5 Y0=186.0 X1=460.0 Y1=203.0 StrokeColorCode=64 Thickness=5
+LINE: X0=742.5 Y0=717.5 X1=460.0 Y1=203.0 StrokeColorCode=64 Thickness=5
+LINE: X0=742.5 Y0=717.5 X1=350.0 Y1=734.5 StrokeColorCode=64 Thickness=5
+LINE: X0=843.0 Y0=1133.0 X1=549.5 Y1=1133.0 StrokeColorCode=64 Thickness=5
+LINE: X0=846.5 Y0=186.0 X1=657.5 Y1=186.0 StrokeColorCode=64 Thickness=5
+RECTANGLE: X0=622 Y0=0 X1=693 Y1=372 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-8'
+RECTANGLE: X0=0 Y0=0 X1=298 Y1=406 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-1'
+RECTANGLE: X0=693 Y0=0 X1=1000 Y1=372 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-0'
+RECTANGLE: X0=298 Y0=0 X1=622 Y1=406 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-5'
+RECTANGLE: X0=78 Y0=406 X1=622 Y1=1063 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-4'
+RECTANGLE: X0=0 Y0=406 X1=78 Y1=1063 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-0'
+RECTANGLE: X0=863 Y0=372 X1=1000 Y1=1063 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-2'
+RECTANGLE: X0=622 Y0=372 X1=863 Y1=1063 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-3'
+RECTANGLE: X0=0 Y0=1063 X1=232 Y1=1334 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-1'
+RECTANGLE: X0=686 Y0=1063 X1=1000 Y1=1203 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-7'
+RECTANGLE: X0=413 Y0=1063 X1=686 Y1=1203 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-0'
+RECTANGLE: X0=232 Y0=1063 X1=413 Y1=1334 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-0'
+RECTANGLE: X0=0 Y0=1334 X1=287 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-1'
+RECTANGLE: X0=677 Y0=1203 X1=1000 Y1=1700 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-1'
+RECTANGLE: X0=413 Y0=1203 X1=677 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-9'
+RECTANGLE: X0=287 Y0=1334 X1=413 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-6'
+FRAME: Code=3
+LINE: X0=116.0 Y0=1198.5 X1=350.0 Y1=734.5 StrokeColorCode=64 Thickness=5
+LINE: X0=116.0 Y0=1198.5 X1=39.0 Y1=734.5 StrokeColorCode=64 Thickness=5
+LINE: X0=843.0 Y0=1133.0 X1=931.5 Y1=717.5 StrokeColorCode=64 Thickness=5
+LINE: X0=843.0 Y0=1133.0 X1=742.5 Y1=717.5 StrokeColorCode=64 Thickness=5
+LINE: X0=549.5 Y0=1133.0 X1=350.0 Y1=734.5 StrokeColorCode=64 Thickness=5
+LINE: X0=549.5 Y0=1133.0 X1=742.5 Y1=717.5 StrokeColorCode=64 Thickness=5
+LINE: X0=322.5 Y0=1198.5 X1=350.0 Y1=734.5 StrokeColorCode=64 Thickness=5
+LINE: X0=838.5 Y0=1451.5 X1=843.0 Y1=1133.0 StrokeColorCode=64 Thickness=5
+LINE: X0=838.5 Y0=1451.5 X1=549.5 Y1=1133.0 StrokeColorCode=64 Thickness=5
+LINE: X0=545.0 Y0=1451.5 X1=549.5 Y1=1133.0 StrokeColorCode=64 Thickness=5
+LINE: X0=931.5 Y0=717.5 X1=846.5 Y1=186.0 StrokeColorCode=64 Thickness=5
+LINE: X0=742.5 Y0=717.5 X1=657.5 Y1=186.0 StrokeColorCode=64 Thickness=5
+LINE: X0=742.5 Y0=717.5 X1=846.5 Y1=186.0 StrokeColorCode=64 Thickness=5
+LINE: X0=143.5 Y0=1517.0 X1=116.0 Y1=1198.5 StrokeColorCode=64 Thickness=5
+LINE: X0=143.5 Y0=1517.0 X1=322.5 Y1=1198.5 StrokeColorCode=64 Thickness=5
+LINE: X0=350.0 Y0=1517.0 X1=322.5 Y1=1198.5 StrokeColorCode=64 Thickness=5
+LINE: X0=350.0 Y0=734.5 X1=149.0 Y1=203.0 StrokeColorCode=64 Thickness=5
+LINE: X0=350.0 Y0=734.5 X1=460.0 Y1=203.0 StrokeColorCode=64 Thickness=5
+LINE: X0=39.0 Y0=734.5 X1=149.0 Y1=203.0 StrokeColorCode=64 Thickness=5
+LINE: X0=350.0 Y0=734.5 X1=39.0 Y1=734.5 StrokeColorCode=64 Thickness=5
+LINE: X0=549.5 Y0=1133.0 X1=322.5 Y1=1198.5 StrokeColorCode=64 Thickness=5
+LINE: X0=545.0 Y0=1451.5 X1=322.5 Y1=1198.5 StrokeColorCode=64 Thickness=5
+LINE: X0=545.0 Y0=1451.5 X1=350.0 Y1=1517.0 StrokeColorCode=64 Thickness=5
+LINE: X0=350.0 Y0=1517.0 X1=143.5 Y1=1517.0 StrokeColorCode=64 Thickness=5
+LINE: X0=931.5 Y0=717.5 X1=742.5 Y1=717.5 StrokeColorCode=64 Thickness=5
+LINE: X0=838.5 Y0=1451.5 X1=545.0 Y1=1451.5 StrokeColorCode=64 Thickness=5
+LINE: X0=322.5 Y0=1198.5 X1=116.0 Y1=1198.5 StrokeColorCode=64 Thickness=5
+LINE: X0=460.0 Y0=203.0 X1=149.0 Y1=203.0 StrokeColorCode=64 Thickness=5
+LINE: X0=657.5 Y0=186.0 X1=460.0 Y1=203.0 StrokeColorCode=64 Thickness=5
+LINE: X0=742.5 Y0=717.5 X1=460.0 Y1=203.0 StrokeColorCode=64 Thickness=5
+LINE: X0=742.5 Y0=717.5 X1=350.0 Y1=734.5 StrokeColorCode=64 Thickness=5
+LINE: X0=843.0 Y0=1133.0 X1=549.5 Y1=1133.0 StrokeColorCode=64 Thickness=5
+LINE: X0=846.5 Y0=186.0 X1=657.5 Y1=186.0 StrokeColorCode=64 Thickness=5
+RECTANGLE: X0=622 Y0=0 X1=693 Y1=372 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-8'
+RECTANGLE: X0=0 Y0=0 X1=298 Y1=406 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-1'
+RECTANGLE: X0=693 Y0=0 X1=1000 Y1=372 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-0'
+RECTANGLE: X0=298 Y0=0 X1=622 Y1=406 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-5'
+RECTANGLE: X0=78 Y0=406 X1=622 Y1=1063 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-4'
+RECTANGLE: X0=0 Y0=406 X1=78 Y1=1063 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-0'
+RECTANGLE: X0=863 Y0=372 X1=1000 Y1=1063 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-2'
+RECTANGLE: X0=622 Y0=372 X1=863 Y1=1063 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-3'
+RECTANGLE: X0=0 Y0=1063 X1=232 Y1=1334 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-1'
+RECTANGLE: X0=686 Y0=1063 X1=1000 Y1=1203 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-7'
+RECTANGLE: X0=413 Y0=1063 X1=686 Y1=1203 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-0'
+RECTANGLE: X0=232 Y0=1063 X1=413 Y1=1334 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-0'
+RECTANGLE: X0=0 Y0=1334 X1=287 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-1'
+RECTANGLE: X0=677 Y0=1203 X1=1000 Y1=1700 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-1'
+RECTANGLE: X0=413 Y0=1203 X1=677 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-9'
+RECTANGLE: X0=287 Y0=1334 X1=413 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-6'
+FRAME: Code=4
+LINE: X0=653.0 Y0=625.5 X1=548.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=653.0 Y0=625.5 X1=814.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=919.0 Y0=625.5 X1=814.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=103.5 Y0=1594.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=279.0 Y0=600.0 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=45.0 Y0=600.0 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=45.0 Y0=600.0 X1=11.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=919.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=392.5 Y0=1093.0 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=165.0 Y0=1093.0 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=165.0 Y0=1093.0 X1=45.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=868.0 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=595.5 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=875.0 Y0=1375.5 X1=868.0 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=919.0 Y0=625.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=331.0 Y1=1594.0 StrokeColorCode=64 Thickness=5
+LINE: X0=392.5 Y0=1093.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=103.5 Y1=1594.0 StrokeColorCode=64 Thickness=5
+LINE: X0=548.0 Y0=276.5 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=548.0 Y0=276.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=653.0 Y0=625.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=245.0 Y0=251.0 X1=11.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=279.0 Y0=600.0 X1=45.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=595.5 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=875.0 Y0=1375.5 X1=602.5 Y1=1375.5 StrokeColorCode=64 Thickness=5
+LINE: X0=814.0 Y0=276.5 X1=548.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+RECTANGLE: X0=22 Y0=0 X1=468 Y1=502 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-1'
+RECTANGLE: X0=468 Y0=0 X1=628 Y1=553 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-1'
+RECTANGLE: X0=0 Y0=0 X1=22 Y1=502 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-0'
+RECTANGLE: X0=628 Y0=0 X1=1000 Y1=553 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-2'
+RECTANGLE: X0=468 Y0=553 X1=838 Y1=698 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-5'
+RECTANGLE: X0=838 Y0=553 X1=1000 Y1=698 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-0'
+RECTANGLE: X0=90 Y0=502 X1=468 Y1=698 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-0'
+RECTANGLE: X0=0 Y0=502 X1=90 Y1=698 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-2'
+RECTANGLE: X0=736 Y0=698 X1=1000 Y1=1051 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-4'
+RECTANGLE: X0=330 Y0=698 X1=455 Y1=1488 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-2'
+RECTANGLE: X0=0 Y0=698 X1=330 Y1=1488 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-6'
+RECTANGLE: X0=207 Y0=1488 X1=455 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-0'
+RECTANGLE: X0=455 Y0=698 X1=736 Y1=1051 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-1'
+RECTANGLE: X0=455 Y0=1051 X1=750 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-1'
+RECTANGLE: X0=750 Y0=1051 X1=1000 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-7'
+RECTANGLE: X0=0 Y0=1488 X1=207 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-3'
+FRAME: Code=5
+LINE: X0=653.0 Y0=625.5 X1=548.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=653.0 Y0=625.5 X1=814.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=919.0 Y0=625.5 X1=814.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=103.5 Y0=1594.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=279.0 Y0=600.0 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=45.0 Y0=600.0 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=45.0 Y0=600.0 X1=11.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=919.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=392.5 Y0=1093.0 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=165.0 Y0=1093.0 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=165.0 Y0=1093.0 X1=45.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=868.0 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=595.5 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=875.0 Y0=1375.5 X1=868.0 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=919.0 Y0=625.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=331.0 Y1=1594.0 StrokeColorCode=64 Thickness=5
+LINE: X0=392.5 Y0=1093.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=103.5 Y1=1594.0 StrokeColorCode=64 Thickness=5
+LINE: X0=548.0 Y0=276.5 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=548.0 Y0=276.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=653.0 Y0=625.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=245.0 Y0=251.0 X1=11.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=279.0 Y0=600.0 X1=45.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=595.5 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=875.0 Y0=1375.5 X1=602.5 Y1=1375.5 StrokeColorCode=64 Thickness=5
+LINE: X0=814.0 Y0=276.5 X1=548.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+RECTANGLE: X0=22 Y0=0 X1=468 Y1=502 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-1'
+RECTANGLE: X0=468 Y0=0 X1=628 Y1=553 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-1'
+RECTANGLE: X0=0 Y0=0 X1=22 Y1=502 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-0'
+RECTANGLE: X0=628 Y0=0 X1=1000 Y1=553 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-2'
+RECTANGLE: X0=468 Y0=553 X1=838 Y1=698 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-5'
+RECTANGLE: X0=838 Y0=553 X1=1000 Y1=698 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-0'
+RECTANGLE: X0=90 Y0=502 X1=468 Y1=698 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-0'
+RECTANGLE: X0=0 Y0=502 X1=90 Y1=698 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-2'
+RECTANGLE: X0=736 Y0=698 X1=1000 Y1=1051 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-4'
+RECTANGLE: X0=330 Y0=698 X1=455 Y1=1488 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-2'
+RECTANGLE: X0=0 Y0=698 X1=330 Y1=1488 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-6'
+RECTANGLE: X0=207 Y0=1488 X1=455 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-0'
+RECTANGLE: X0=455 Y0=698 X1=736 Y1=1051 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-1'
+RECTANGLE: X0=455 Y0=1051 X1=750 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-1'
+RECTANGLE: X0=750 Y0=1051 X1=1000 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-7'
+RECTANGLE: X0=0 Y0=1488 X1=207 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-3'
+FRAME: Code=6
+LINE: X0=653.0 Y0=625.5 X1=548.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=653.0 Y0=625.5 X1=814.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=919.0 Y0=625.5 X1=814.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=103.5 Y0=1594.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=279.0 Y0=600.0 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=45.0 Y0=600.0 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=45.0 Y0=600.0 X1=11.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=919.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=392.5 Y0=1093.0 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=165.0 Y0=1093.0 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=165.0 Y0=1093.0 X1=45.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=868.0 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=595.5 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=875.0 Y0=1375.5 X1=868.0 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=919.0 Y0=625.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=331.0 Y1=1594.0 StrokeColorCode=64 Thickness=5
+LINE: X0=392.5 Y0=1093.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=103.5 Y1=1594.0 StrokeColorCode=64 Thickness=5
+LINE: X0=548.0 Y0=276.5 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=548.0 Y0=276.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=653.0 Y0=625.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=245.0 Y0=251.0 X1=11.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=279.0 Y0=600.0 X1=45.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=595.5 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=875.0 Y0=1375.5 X1=602.5 Y1=1375.5 StrokeColorCode=64 Thickness=5
+LINE: X0=814.0 Y0=276.5 X1=548.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+RECTANGLE: X0=22 Y0=0 X1=468 Y1=502 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-1'
+RECTANGLE: X0=468 Y0=0 X1=628 Y1=553 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-1'
+RECTANGLE: X0=0 Y0=0 X1=22 Y1=502 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-0'
+RECTANGLE: X0=628 Y0=0 X1=1000 Y1=553 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-2'
+RECTANGLE: X0=468 Y0=553 X1=838 Y1=698 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-5'
+RECTANGLE: X0=838 Y0=553 X1=1000 Y1=698 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-0'
+RECTANGLE: X0=90 Y0=502 X1=468 Y1=698 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-0'
+RECTANGLE: X0=0 Y0=502 X1=90 Y1=698 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-2'
+RECTANGLE: X0=736 Y0=698 X1=1000 Y1=1051 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-4'
+RECTANGLE: X0=330 Y0=698 X1=455 Y1=1488 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-2'
+RECTANGLE: X0=0 Y0=698 X1=330 Y1=1488 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-6'
+RECTANGLE: X0=207 Y0=1488 X1=455 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-0'
+RECTANGLE: X0=455 Y0=698 X1=736 Y1=1051 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-1'
+RECTANGLE: X0=455 Y0=1051 X1=750 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-1'
+RECTANGLE: X0=750 Y0=1051 X1=1000 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-7'
+RECTANGLE: X0=0 Y0=1488 X1=207 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-3'
+FRAME: Code=7
+LINE: X0=653.0 Y0=625.5 X1=548.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=653.0 Y0=625.5 X1=814.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=919.0 Y0=625.5 X1=814.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=103.5 Y0=1594.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=279.0 Y0=600.0 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=45.0 Y0=600.0 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=45.0 Y0=600.0 X1=11.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=919.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=392.5 Y0=1093.0 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=165.0 Y0=1093.0 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=165.0 Y0=1093.0 X1=45.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=868.0 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=595.5 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=875.0 Y0=1375.5 X1=868.0 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=919.0 Y0=625.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=331.0 Y1=1594.0 StrokeColorCode=64 Thickness=5
+LINE: X0=392.5 Y0=1093.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=103.5 Y1=1594.0 StrokeColorCode=64 Thickness=5
+LINE: X0=548.0 Y0=276.5 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=548.0 Y0=276.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=653.0 Y0=625.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=245.0 Y0=251.0 X1=11.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=279.0 Y0=600.0 X1=45.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=595.5 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=875.0 Y0=1375.5 X1=602.5 Y1=1375.5 StrokeColorCode=64 Thickness=5
+LINE: X0=814.0 Y0=276.5 X1=548.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+RECTANGLE: X0=22 Y0=0 X1=468 Y1=502 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-1'
+RECTANGLE: X0=468 Y0=0 X1=628 Y1=553 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-1'
+RECTANGLE: X0=0 Y0=0 X1=22 Y1=502 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-0'
+RECTANGLE: X0=628 Y0=0 X1=1000 Y1=553 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-2'
+RECTANGLE: X0=468 Y0=553 X1=838 Y1=698 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-5'
+RECTANGLE: X0=838 Y0=553 X1=1000 Y1=698 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-0'
+RECTANGLE: X0=90 Y0=502 X1=468 Y1=698 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-0'
+RECTANGLE: X0=0 Y0=502 X1=90 Y1=698 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-2'
+RECTANGLE: X0=736 Y0=698 X1=1000 Y1=1051 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-4'
+RECTANGLE: X0=330 Y0=698 X1=455 Y1=1488 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-2'
+RECTANGLE: X0=0 Y0=698 X1=330 Y1=1488 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-6'
+RECTANGLE: X0=207 Y0=1488 X1=455 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-0'
+RECTANGLE: X0=455 Y0=698 X1=736 Y1=1051 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-1'
+RECTANGLE: X0=455 Y0=1051 X1=750 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-1'
+RECTANGLE: X0=750 Y0=1051 X1=1000 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-7'
+RECTANGLE: X0=0 Y0=1488 X1=207 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-3'
+FRAME: Code=8
+LINE: X0=653.0 Y0=625.5 X1=548.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=653.0 Y0=625.5 X1=814.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=919.0 Y0=625.5 X1=814.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=103.5 Y0=1594.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=279.0 Y0=600.0 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=45.0 Y0=600.0 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=45.0 Y0=600.0 X1=11.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=919.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=392.5 Y0=1093.0 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=165.0 Y0=1093.0 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=165.0 Y0=1093.0 X1=45.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=868.0 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=595.5 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=875.0 Y0=1375.5 X1=868.0 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=919.0 Y0=625.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=331.0 Y1=1594.0 StrokeColorCode=64 Thickness=5
+LINE: X0=392.5 Y0=1093.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=103.5 Y1=1594.0 StrokeColorCode=64 Thickness=5
+LINE: X0=548.0 Y0=276.5 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=548.0 Y0=276.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=653.0 Y0=625.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=245.0 Y0=251.0 X1=11.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=279.0 Y0=600.0 X1=45.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=595.5 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=875.0 Y0=1375.5 X1=602.5 Y1=1375.5 StrokeColorCode=64 Thickness=5
+LINE: X0=814.0 Y0=276.5 X1=548.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+RECTANGLE: X0=22 Y0=0 X1=468 Y1=502 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-1'
+RECTANGLE: X0=468 Y0=0 X1=628 Y1=553 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-1'
+RECTANGLE: X0=0 Y0=0 X1=22 Y1=502 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-0'
+RECTANGLE: X0=628 Y0=0 X1=1000 Y1=553 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-2'
+RECTANGLE: X0=468 Y0=553 X1=838 Y1=698 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-5'
+RECTANGLE: X0=838 Y0=553 X1=1000 Y1=698 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-0'
+RECTANGLE: X0=90 Y0=502 X1=468 Y1=698 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-0'
+RECTANGLE: X0=0 Y0=502 X1=90 Y1=698 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-2'
+RECTANGLE: X0=736 Y0=698 X1=1000 Y1=1051 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-4'
+RECTANGLE: X0=330 Y0=698 X1=455 Y1=1488 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-2'
+RECTANGLE: X0=0 Y0=698 X1=330 Y1=1488 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-6'
+RECTANGLE: X0=207 Y0=1488 X1=455 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-0'
+RECTANGLE: X0=455 Y0=698 X1=736 Y1=1051 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-1'
+RECTANGLE: X0=455 Y0=1051 X1=750 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-1'
+RECTANGLE: X0=750 Y0=1051 X1=1000 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-7'
+RECTANGLE: X0=0 Y0=1488 X1=207 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-3'
+FRAME: Code=9
+LINE: X0=653.0 Y0=625.5 X1=548.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=653.0 Y0=625.5 X1=814.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=919.0 Y0=625.5 X1=814.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=103.5 Y0=1594.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=279.0 Y0=600.0 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=45.0 Y0=600.0 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=45.0 Y0=600.0 X1=11.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=919.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=392.5 Y0=1093.0 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=165.0 Y0=1093.0 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=165.0 Y0=1093.0 X1=45.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=868.0 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=595.5 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=875.0 Y0=1375.5 X1=868.0 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=919.0 Y0=625.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=331.0 Y1=1594.0 StrokeColorCode=64 Thickness=5
+LINE: X0=392.5 Y0=1093.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=103.5 Y1=1594.0 StrokeColorCode=64 Thickness=5
+LINE: X0=548.0 Y0=276.5 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=548.0 Y0=276.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=653.0 Y0=625.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=245.0 Y0=251.0 X1=11.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=279.0 Y0=600.0 X1=45.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=595.5 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=875.0 Y0=1375.5 X1=602.5 Y1=1375.5 StrokeColorCode=64 Thickness=5
+LINE: X0=814.0 Y0=276.5 X1=548.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+RECTANGLE: X0=22 Y0=0 X1=468 Y1=502 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-1'
+RECTANGLE: X0=468 Y0=0 X1=628 Y1=553 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-1'
+RECTANGLE: X0=0 Y0=0 X1=22 Y1=502 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-0'
+RECTANGLE: X0=628 Y0=0 X1=1000 Y1=553 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-2'
+RECTANGLE: X0=468 Y0=553 X1=838 Y1=698 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-5'
+RECTANGLE: X0=838 Y0=553 X1=1000 Y1=698 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-0'
+RECTANGLE: X0=90 Y0=502 X1=468 Y1=698 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-0'
+RECTANGLE: X0=0 Y0=502 X1=90 Y1=698 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-2'
+RECTANGLE: X0=736 Y0=698 X1=1000 Y1=1051 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-4'
+RECTANGLE: X0=330 Y0=698 X1=455 Y1=1488 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-2'
+RECTANGLE: X0=0 Y0=698 X1=330 Y1=1488 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-6'
+RECTANGLE: X0=207 Y0=1488 X1=455 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-0'
+RECTANGLE: X0=455 Y0=698 X1=736 Y1=1051 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-1'
+RECTANGLE: X0=455 Y0=1051 X1=750 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-1'
+RECTANGLE: X0=750 Y0=1051 X1=1000 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-7'
+RECTANGLE: X0=0 Y0=1488 X1=207 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-3'
+FRAME: Code=10
+LINE: X0=653.0 Y0=625.5 X1=548.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=653.0 Y0=625.5 X1=814.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=919.0 Y0=625.5 X1=814.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=103.5 Y0=1594.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=279.0 Y0=600.0 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=45.0 Y0=600.0 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=45.0 Y0=600.0 X1=11.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=919.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=392.5 Y0=1093.0 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=165.0 Y0=1093.0 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=165.0 Y0=1093.0 X1=45.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=868.0 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=595.5 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=875.0 Y0=1375.5 X1=868.0 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=919.0 Y0=625.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=331.0 Y1=1594.0 StrokeColorCode=64 Thickness=5
+LINE: X0=392.5 Y0=1093.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=103.5 Y1=1594.0 StrokeColorCode=64 Thickness=5
+LINE: X0=548.0 Y0=276.5 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=548.0 Y0=276.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=653.0 Y0=625.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=245.0 Y0=251.0 X1=11.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=279.0 Y0=600.0 X1=45.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=595.5 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=875.0 Y0=1375.5 X1=602.5 Y1=1375.5 StrokeColorCode=64 Thickness=5
+LINE: X0=814.0 Y0=276.5 X1=548.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+RECTANGLE: X0=22 Y0=0 X1=468 Y1=502 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-1'
+RECTANGLE: X0=468 Y0=0 X1=628 Y1=553 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-1'
+RECTANGLE: X0=0 Y0=0 X1=22 Y1=502 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-0'
+RECTANGLE: X0=628 Y0=0 X1=1000 Y1=553 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-2'
+RECTANGLE: X0=468 Y0=553 X1=838 Y1=698 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-5'
+RECTANGLE: X0=838 Y0=553 X1=1000 Y1=698 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-0'
+RECTANGLE: X0=90 Y0=502 X1=468 Y1=698 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-0'
+RECTANGLE: X0=0 Y0=502 X1=90 Y1=698 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-2'
+RECTANGLE: X0=736 Y0=698 X1=1000 Y1=1051 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-4'
+RECTANGLE: X0=330 Y0=698 X1=455 Y1=1488 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-2'
+RECTANGLE: X0=0 Y0=698 X1=330 Y1=1488 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-6'
+RECTANGLE: X0=207 Y0=1488 X1=455 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-0'
+RECTANGLE: X0=455 Y0=698 X1=736 Y1=1051 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-1'
+RECTANGLE: X0=455 Y0=1051 X1=750 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-1'
+RECTANGLE: X0=750 Y0=1051 X1=1000 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-7'
+RECTANGLE: X0=0 Y0=1488 X1=207 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-3'
+FRAME: Code=11
+LINE: X0=653.0 Y0=625.5 X1=548.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=653.0 Y0=625.5 X1=814.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=919.0 Y0=625.5 X1=814.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=103.5 Y0=1594.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=279.0 Y0=600.0 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=45.0 Y0=600.0 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=45.0 Y0=600.0 X1=11.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=919.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=392.5 Y0=1093.0 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=165.0 Y0=1093.0 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=165.0 Y0=1093.0 X1=45.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=868.0 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=595.5 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=875.0 Y0=1375.5 X1=868.0 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=919.0 Y0=625.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=331.0 Y1=1594.0 StrokeColorCode=64 Thickness=5
+LINE: X0=392.5 Y0=1093.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=103.5 Y1=1594.0 StrokeColorCode=64 Thickness=5
+LINE: X0=548.0 Y0=276.5 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=548.0 Y0=276.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=653.0 Y0=625.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=245.0 Y0=251.0 X1=11.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=279.0 Y0=600.0 X1=45.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=595.5 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=875.0 Y0=1375.5 X1=602.5 Y1=1375.5 StrokeColorCode=64 Thickness=5
+LINE: X0=814.0 Y0=276.5 X1=548.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+RECTANGLE: X0=22 Y0=0 X1=468 Y1=502 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-1'
+RECTANGLE: X0=468 Y0=0 X1=628 Y1=553 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-1'
+RECTANGLE: X0=0 Y0=0 X1=22 Y1=502 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-0'
+RECTANGLE: X0=628 Y0=0 X1=1000 Y1=553 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-2'
+RECTANGLE: X0=468 Y0=553 X1=838 Y1=698 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-5'
+RECTANGLE: X0=838 Y0=553 X1=1000 Y1=698 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-0'
+RECTANGLE: X0=90 Y0=502 X1=468 Y1=698 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-0'
+RECTANGLE: X0=0 Y0=502 X1=90 Y1=698 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-2'
+RECTANGLE: X0=736 Y0=698 X1=1000 Y1=1051 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-4'
+RECTANGLE: X0=330 Y0=698 X1=455 Y1=1488 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-2'
+RECTANGLE: X0=0 Y0=698 X1=330 Y1=1488 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-6'
+RECTANGLE: X0=207 Y0=1488 X1=455 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-0'
+RECTANGLE: X0=455 Y0=698 X1=736 Y1=1051 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-1'
+RECTANGLE: X0=455 Y0=1051 X1=750 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-1'
+RECTANGLE: X0=750 Y0=1051 X1=1000 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-7'
+RECTANGLE: X0=0 Y0=1488 X1=207 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-3'
+FRAME: Code=12
+LINE: X0=653.0 Y0=625.5 X1=548.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=653.0 Y0=625.5 X1=814.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=919.0 Y0=625.5 X1=814.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=103.5 Y0=1594.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=279.0 Y0=600.0 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=45.0 Y0=600.0 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=45.0 Y0=600.0 X1=11.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=919.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=392.5 Y0=1093.0 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=165.0 Y0=1093.0 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=165.0 Y0=1093.0 X1=45.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=868.0 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=595.5 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=875.0 Y0=1375.5 X1=868.0 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=919.0 Y0=625.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=331.0 Y1=1594.0 StrokeColorCode=64 Thickness=5
+LINE: X0=392.5 Y0=1093.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=103.5 Y1=1594.0 StrokeColorCode=64 Thickness=5
+LINE: X0=548.0 Y0=276.5 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=548.0 Y0=276.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=653.0 Y0=625.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=245.0 Y0=251.0 X1=11.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=279.0 Y0=600.0 X1=45.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=595.5 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=875.0 Y0=1375.5 X1=602.5 Y1=1375.5 StrokeColorCode=64 Thickness=5
+LINE: X0=814.0 Y0=276.5 X1=548.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+RECTANGLE: X0=22 Y0=0 X1=468 Y1=502 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-1'
+RECTANGLE: X0=468 Y0=0 X1=628 Y1=553 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-1'
+RECTANGLE: X0=0 Y0=0 X1=22 Y1=502 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-0'
+RECTANGLE: X0=628 Y0=0 X1=1000 Y1=553 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-2'
+RECTANGLE: X0=468 Y0=553 X1=838 Y1=698 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-5'
+RECTANGLE: X0=838 Y0=553 X1=1000 Y1=698 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-0'
+RECTANGLE: X0=90 Y0=502 X1=468 Y1=698 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-0'
+RECTANGLE: X0=0 Y0=502 X1=90 Y1=698 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-2'
+RECTANGLE: X0=736 Y0=698 X1=1000 Y1=1051 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-4'
+RECTANGLE: X0=330 Y0=698 X1=455 Y1=1488 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-2'
+RECTANGLE: X0=0 Y0=698 X1=330 Y1=1488 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-6'
+RECTANGLE: X0=207 Y0=1488 X1=455 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-0'
+RECTANGLE: X0=455 Y0=698 X1=736 Y1=1051 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-1'
+RECTANGLE: X0=455 Y0=1051 X1=750 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-1'
+RECTANGLE: X0=750 Y0=1051 X1=1000 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-7'
+RECTANGLE: X0=0 Y0=1488 X1=207 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-3'
+FRAME: Code=13
+LINE: X0=653.0 Y0=625.5 X1=548.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=653.0 Y0=625.5 X1=814.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=919.0 Y0=625.5 X1=814.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=103.5 Y0=1594.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=279.0 Y0=600.0 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=45.0 Y0=600.0 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=45.0 Y0=600.0 X1=11.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=919.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=392.5 Y0=1093.0 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=165.0 Y0=1093.0 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=165.0 Y0=1093.0 X1=45.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=868.0 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=595.5 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=875.0 Y0=1375.5 X1=868.0 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=919.0 Y0=625.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=331.0 Y1=1594.0 StrokeColorCode=64 Thickness=5
+LINE: X0=392.5 Y0=1093.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=103.5 Y1=1594.0 StrokeColorCode=64 Thickness=5
+LINE: X0=548.0 Y0=276.5 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=548.0 Y0=276.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=653.0 Y0=625.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=245.0 Y0=251.0 X1=11.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=279.0 Y0=600.0 X1=45.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=595.5 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=875.0 Y0=1375.5 X1=602.5 Y1=1375.5 StrokeColorCode=64 Thickness=5
+LINE: X0=814.0 Y0=276.5 X1=548.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+RECTANGLE: X0=22 Y0=0 X1=468 Y1=502 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-1'
+RECTANGLE: X0=468 Y0=0 X1=628 Y1=553 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-1'
+RECTANGLE: X0=0 Y0=0 X1=22 Y1=502 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-0'
+RECTANGLE: X0=628 Y0=0 X1=1000 Y1=553 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-2'
+RECTANGLE: X0=468 Y0=553 X1=838 Y1=698 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-5'
+RECTANGLE: X0=838 Y0=553 X1=1000 Y1=698 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-0'
+RECTANGLE: X0=90 Y0=502 X1=468 Y1=698 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-0'
+RECTANGLE: X0=0 Y0=502 X1=90 Y1=698 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-2'
+RECTANGLE: X0=736 Y0=698 X1=1000 Y1=1051 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-4'
+RECTANGLE: X0=330 Y0=698 X1=455 Y1=1488 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-2'
+RECTANGLE: X0=0 Y0=698 X1=330 Y1=1488 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-6'
+RECTANGLE: X0=207 Y0=1488 X1=455 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-0'
+RECTANGLE: X0=455 Y0=698 X1=736 Y1=1051 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-1'
+RECTANGLE: X0=455 Y0=1051 X1=750 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-1'
+RECTANGLE: X0=750 Y0=1051 X1=1000 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-7'
+RECTANGLE: X0=0 Y0=1488 X1=207 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-3'
+FRAME: Code=14
+LINE: X0=653.0 Y0=625.5 X1=548.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=653.0 Y0=625.5 X1=814.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=919.0 Y0=625.5 X1=814.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=103.5 Y0=1594.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=279.0 Y0=600.0 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=45.0 Y0=600.0 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=45.0 Y0=600.0 X1=11.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=919.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=392.5 Y0=1093.0 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=165.0 Y0=1093.0 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=165.0 Y0=1093.0 X1=45.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=868.0 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=595.5 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=875.0 Y0=1375.5 X1=868.0 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=919.0 Y0=625.5 X1=653.0 Y1=625.5 StrokeColorCode=64 Thickness=5
+LINE: X0=595.5 Y0=874.5 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=392.5 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=602.5 Y0=1375.5 X1=331.0 Y1=1594.0 StrokeColorCode=64 Thickness=5
+LINE: X0=392.5 Y0=1093.0 X1=165.0 Y1=1093.0 StrokeColorCode=64 Thickness=5
+LINE: X0=331.0 Y0=1594.0 X1=103.5 Y1=1594.0 StrokeColorCode=64 Thickness=5
+LINE: X0=548.0 Y0=276.5 X1=245.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=548.0 Y0=276.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=653.0 Y0=625.5 X1=279.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=245.0 Y0=251.0 X1=11.0 Y1=251.0 StrokeColorCode=64 Thickness=5
+LINE: X0=279.0 Y0=600.0 X1=45.0 Y1=600.0 StrokeColorCode=64 Thickness=5
+LINE: X0=868.0 Y0=874.5 X1=595.5 Y1=874.5 StrokeColorCode=64 Thickness=5
+LINE: X0=875.0 Y0=1375.5 X1=602.5 Y1=1375.5 StrokeColorCode=64 Thickness=5
+LINE: X0=814.0 Y0=276.5 X1=548.0 Y1=276.5 StrokeColorCode=64 Thickness=5
+RECTANGLE: X0=22 Y0=0 X1=468 Y1=502 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-1'
+RECTANGLE: X0=468 Y0=0 X1=628 Y1=553 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-1'
+RECTANGLE: X0=0 Y0=0 X1=22 Y1=502 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-0'
+RECTANGLE: X0=628 Y0=0 X1=1000 Y1=553 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-2'
+RECTANGLE: X0=468 Y0=553 X1=838 Y1=698 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-5'
+RECTANGLE: X0=838 Y0=553 X1=1000 Y1=698 Thickness=0 FillColorCode=81 StrokeColorCode=1 text='3-0'
+RECTANGLE: X0=90 Y0=502 X1=468 Y1=698 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-0'
+RECTANGLE: X0=0 Y0=502 X1=90 Y1=698 Thickness=0 FillColorCode=64 StrokeColorCode=1 text='2-2'
+RECTANGLE: X0=736 Y0=698 X1=1000 Y1=1051 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-4'
+RECTANGLE: X0=330 Y0=698 X1=455 Y1=1488 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-2'
+RECTANGLE: X0=0 Y0=698 X1=330 Y1=1488 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-6'
+RECTANGLE: X0=207 Y0=1488 X1=455 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-0'
+RECTANGLE: X0=455 Y0=698 X1=736 Y1=1051 Thickness=0 FillColorCode=30 StrokeColorCode=1 text='0-1'
+RECTANGLE: X0=455 Y0=1051 X1=750 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-1'
+RECTANGLE: X0=750 Y0=1051 X1=1000 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-7'
+RECTANGLE: X0=0 Y0=1488 X1=207 Y1=1700 Thickness=0 FillColorCode=47 StrokeColorCode=1 text='1-3'
