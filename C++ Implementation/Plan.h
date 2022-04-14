@@ -6,6 +6,7 @@
 #include <cmath>
 #include <set>
 #include <map>
+#include <string>
 
 #include "Subspace.h"
 #include "Global.h"
@@ -20,7 +21,7 @@ namespace nPlan{
 class nPlan::Plan{
 private:
     std::vector<Subspace> SubspaceVector;
-    int SubspaceSize,RoomNumber;
+    int SubspaceSize, RoomNumber;
     float Score;
     nFeatures::Features *Features;
     nDisjointSet::DisjointSet SubspaceConnections;
@@ -55,15 +56,35 @@ class nPlan::Plan::Mason{};
 
 class  nPlan::Plan::Judge{
     public:
-    Judge(int x){std::cout <<"sdfsdfsd"<<x<<std::endl;}
 
-    static void salam(){
-        std::cout << -5;
+    static void PGOpenings(Plan &plan){
+        // Check Openings By PatternCodeOfOpenings
     }
 
-    static void jj(Plan* p){
-        std::cout <<"------"<<p->SubspaceSize<<std::endl;
+    static void PGDoorSize(Plan &plan){
+        // "Doors shall be at least 80cm" later: we could 80<df<120
     }
+
+    static void PGNoThinSpace(Plan &plan){
+        // Rooms should not be narrower than a 100cm threshold because they will ending up unusable
+    }
+
+    static void PGAllConnected(Plan &plan){
+        // All rooms Shall be Connected and have paths between them
+    }
+
+    static void PGEntranceLocation(Plan &plan){
+        // Entrance Should Not be located in Bedroom, WC or Bathroom
+    }
+
+    static void PROneDoor(Plan &plan){
+        // "WC/Bath only have one door" , if WC has two doors, one of them must be to bathroom.
+    }
+
+    static void EvaluatePlanByPattern(Plan &plan, std::string code){
+
+    }
+
     // B-J-M Plan Migiran, &refrence, ye karish mikonan, baresh migardoonan. hamin!
 };
 

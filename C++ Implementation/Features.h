@@ -4,6 +4,8 @@
 #include<vector>
 #include<iostream>
 
+#include "global.h"
+
 namespace nFeatures {
 	class Features;
 }
@@ -14,12 +16,15 @@ public:
 	float TrueNorth;
 	float EntrancePosition;
 	std::vector<int> ActiveRooms;
-	Features(int width, int depth, std::vector<int> activerooms, float truenorth, float entranceposition) {
+	std::vector<enum RoomCode> RoomCodes;
+	Features(int width, int depth, std::vector<int> activerooms,std::vector<enum RoomCode> roomcodes , 
+																						float truenorth, float entranceposition) {
 		Width = width;
 		Depth = depth;
 		ActiveRooms = activerooms;
 		TrueNorth = truenorth;
 		EntrancePosition = entranceposition;
+		RoomCodes = roomcodes;
 	}
 };
 

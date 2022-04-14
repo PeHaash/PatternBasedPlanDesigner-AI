@@ -1,10 +1,5 @@
 #include "Plan.h"
 
-void nPlan::Plan::Judger(){
-        // Judge sda(4);
-        Judge::jj(this);
-}
-
 nPlan::Plan::Plan(nFeatures::Features *feat, const std::vector<std::vector<float>> &nData,
                             nTBGE::TBGE *TBGEElement = NULL, int TBGEFrame=-1){
     SubspaceSize = nData.size();

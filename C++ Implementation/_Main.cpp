@@ -9,8 +9,8 @@
 // #include "Patterns.h"
 
 int main(){
-    std::cout <<"Code Compiled!"<<std::endl;
-    nFeatures::Features feature(1500, 1800, {1,1,1,1}, 23, 0.5);
+    std::cout <<"Hi Mom"<<std::endl;
+    nFeatures::Features feature(1500, 1800, {1,1,1,1}, {LivingRoom, Kitchen, WC, Bedroom}, 23, 0.5);
     nTBGE::TBGE tbge("3 TBGE", "C1");
     // Patterns::PATTERNS PatternCheck;
     //------

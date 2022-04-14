@@ -8,4 +8,6 @@ namespace nGlobal{
 	const int MAX_SUBSPACE = 10;
 }
 
+enum RoomCode{LivingRoom, Kitchen, Bedroom, WC, Bathroom};
+
 #endif

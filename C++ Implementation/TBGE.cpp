@@ -17,12 +17,6 @@ int nTBGE::TBGE::AddArgument(int line, std::string arg){
 	return line;
 }
 
-/*
-template <typename T> int nTBGE::TBGE::AddArgument(int line, std::string arg, T state){
-	Output[line]+= " " + arg + "=" + std::to_string(state) + " ";
-	return line;
-}*/
-
 void nTBGE::TBGE::Clear(){
 	Output.clear();
 	size=0;
